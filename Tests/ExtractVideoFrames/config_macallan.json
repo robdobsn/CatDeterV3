@@ -1,0 +1,8 @@
+{
+  "videoSourceType": "folder",
+  "videoSourceStr": "E:/FilmAndTV/WebCamRecordings/video/UAFAS",
+  "destFolder":"E:/Working/catdetectv3/images",
+  "dataFile":"G:/DB/Dropbox (TheDobsons)/Main/RobDev/Projects/AutomationIoT/DoorCameraAndLocks/Cat Deterrent/CatDeterV3/Tests/ExtractVideoFrames/macallan_dataFile.tsv",
+  "frameDetectType": "multi-frame-bb",
+  "frameDetectLen": 2
+}
