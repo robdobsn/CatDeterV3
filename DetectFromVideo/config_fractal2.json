@@ -1,0 +1,12 @@
+{
+  "videoSourceType1": "folder",
+  "videoSourceType": "stream",
+  "videoSourceStr2": "//macallan/FilmAndTV/WebCamRecordings/video/UAFAS",
+  "videoSourceStr1": "../testVideo",
+  "videoSourceStr": "rtsp://{0}:{1}@192.168.0.107:554/Streaming/Channels/101/",
+  "destFolder":"C:/Users/rob/Documents/CatDetectV3WorkingFiles/images",
+  "outDataFile":"//macallan/Main/RobDev/Projects/AutomationIoT/DoorCameraAndLocks/Cat Deterrent/CatDeterV3/Tests/ExtractVideoFrames/fractal2_dataFile.tsv",
+  "frameDetectType": "one-frame",
+  "frameDetectLen": 3,
+  "imageNetFolder": "ImageNet"
+}
