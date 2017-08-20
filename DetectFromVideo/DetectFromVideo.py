@@ -331,11 +331,37 @@ class VideoSource():
                 maxDist = d
         return maxDist
 
-    def getCroppedImage(self, videoFrame, boundingRect):
-        # Crop the image using the bounding rect
+    def getCroppedImage(self, videoFrame, resizedImage, boundingRect, reqdSizeHW):
+        # Scaling factors
+        h1,w1 = videoFrame.shape[:2]
+        h2,w2 = resizedImage.shape[:2]
+        hScale,wScale = (h1/h2,w1/w2)
+        # Scale the bounding rect to the original image
         (x1, y1, x2, y2) = boundingRect
-        cropImg = videoFrame[y1:y2,x1:x2]
-        return cropImg
+        x1,x2 = wScale * x1, wScale * x2
+        y1,y2 = hScale * y1, hScale * y2
+        # Reqd shape
+        (hReqd,wReqd) = reqdSizeHW
+        fReqd = hReqd/wReqd
+        wBounds = x2-x1
+        hBounds = y2-y1
+        fBounds = hBounds/wBounds
+        if fReqd > fBounds:
+            hBoundsNew = wBounds * fReqd
+            y1 -= max((hBoundsNew-hBounds) / 2, 0)
+            y2 += min((hBoundsNew-hBounds) / 2, h1-1)
+        else:
+            wBoundsNew = hBounds / fReqd
+            x1 -= max((wBoundsNew-wBounds) / 2, 0)
+            x2 += min((wBoundsNew-wBounds) / 2, w1-1)
+        # Crop the original image
+        cropImg = videoFrame[int(y1):int(y2),int(x1):int(x2)]
+        # Resize
+        hCrop, wCrop = cropImg.shape[:2]
+        if hCrop <= 0 or wCrop <= 0:
+            return None
+        resImg = cv2.resize(cropImg, dsize=reqdSizeHW, interpolation=cv2.INTER_CUBIC)
+        return resImg
 
     def saveAsJpeg(self, destFolder, fileName, fileIdx, frameIdx, image):
         # Export the frame as a jpeg
@@ -413,7 +439,6 @@ def main(_):
     videoSourceType = config["videoSourceType"]
     videoSourceStr = config["videoSourceStr"]
     destImageFolder = config["destFolder"]
-    outDataFile = config["outDataFile"]
     frameDetectType = config["frameDetectType"]
     frameDetectLen = config["frameDetectLen"]
     imageNetFolder = config["imageNetFolder"]
@@ -438,12 +463,12 @@ def main(_):
                 #     continue
                 # Detect motion
                 (validBounds, motionDetectFrame, maxBoundsCoords, boundsList, contours) = videoSource.motionDetectFrame(videoFrame)
-                # if not validBounds:
-                #     continue
 
                 # Detect cat
                 if validBounds == videoSource.boundsValid:
-                    croppedImage = videoSource.getCroppedImage(motionDetectFrame, maxBoundsCoords)
+                    croppedImage = videoSource.getCroppedImage(videoFrame, motionDetectFrame, maxBoundsCoords, (299,299))
+                    if croppedImage is None:
+                        continue
                     (human_string, score) = imageRecogniser.recogniseImage(sess, croppedImage, 1)
                     # if score > 0.2 and "iamese" in human_string:
                     #     print('%s (score = %.5f)' % (human_string, score))

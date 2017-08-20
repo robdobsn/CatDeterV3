@@ -1,9 +1,7 @@
 {
   "videoSourceType": "folder",
-  "videoSourceStr2": "C:/Users/rob/Documents/VideoForTestingCatDetection/video/side",
   "videoSourceStr": "../testVideo",
-  "destFolder":"C:/Users/rob/Documents/VideoForTestingCatDetection/images",
-  "outDataFile":"C:/Users/rob/Documents/VideoForTestingCatDetection/dataFile.tsv",
+  "destFolder":"../testImages",
   "frameDetectType": "one-frame",
   "frameDetectLen": 3,
   "imageNetFolder": "ImageNet"
