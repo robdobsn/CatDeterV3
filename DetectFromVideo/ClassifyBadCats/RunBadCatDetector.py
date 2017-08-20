@@ -8,6 +8,7 @@ import tflearn
 from tflearn.layers.conv import conv_2d, max_pool_2d
 from tflearn.layers.core import input_data, dropout, fully_connected
 from tflearn.layers.estimator import regression
+import time
 
 TEST_DIR = 'C:/Users/rob/Dropbox (TheDobsons)/Main/RobDev/Projects/AutomationIoT/DoorCameraAndLocks/Cat Deterrent/CatDeterV3/nnTestImages'
 IMG_SIZE = 50
@@ -17,15 +18,14 @@ MODEL_NAME = 'catdetectv3-{}-{}.model'.format(LR, '2conv-basic') # just so we re
 
 def process_test_data():
     testing_data = []
-    for img in tqdm(os.listdir(TEST_DIR)):
-        (fname, ext) = os.path.splitext(img)
+    for imgName in tqdm(os.listdir(TEST_DIR)):
+        (fname, ext) = os.path.splitext(imgName)
         if ext != ".jpg":
             continue
-        path = os.path.join(TEST_DIR, img)
-        img_num = img.split('.')[0]
+        path = os.path.join(TEST_DIR, imgName)
         img = cv2.imread(path)
         img = cv2.resize(img, (IMG_SIZE, IMG_SIZE))
-        testing_data.append([np.array(img), img_num])
+        testing_data.append([np.array(img), imgName])
 
     shuffle(testing_data)
     np.save('test_data.npy', testing_data)
@@ -71,32 +71,52 @@ convnet = regression(convnet, optimizer='adam', learning_rate=LR, loss='categori
 model = tflearn.DNN(convnet, tensorboard_dir='log')
 
 if os.path.exists('C:/Users/rob/Dropbox (TheDobsons)/Main/RobDev/Projects/AutomationIoT/DoorCameraAndLocks/Cat Deterrent/CatDeterV3/DetectFromVideo/ClassifyBadCats/{}.meta'.format(MODEL_NAME)):
+    print("Loading model")
     model.load(MODEL_NAME)
     print('model loaded!')
 
 fig = plt.figure()
 
-for num, data in enumerate(test_data[:12]):
+totalTime = 0
+totalImages = 0
+totalCorrect = 0
+totalFalsePositives = 0
+for num, data in enumerate(test_data):
     # bad: [1,0]
     # good: [0,1]
 
-    img_num = data[1]
+    img_name = data[1]
     img_data = data[0]
 
-    y = fig.add_subplot(3, 4, num + 1)
-    orig = img_data
+    word_label = img_name.split('_')[0]
+
     data = img_data.reshape(IMG_SIZE, IMG_SIZE, 3)
     # model_out = model.predict([data])[0]
+    startTime = time.time()
     model_out = model.predict([data])[0]
+    endTime = time.time()
+    totalTime += endTime-startTime
+    totalImages += 1
 
     if np.argmax(model_out) == 1:
         str_label = 'Good'
+        if word_label == "good":
+            totalCorrect += 1
     else:
         str_label = 'Bad'
+        if word_label == "bad":
+            totalCorrect += 1
+        else:
+            totalFalsePositives += 1
 
-    y.imshow(orig)
-    plt.title(str_label)
-    y.axes.get_xaxis().set_visible(False)
-    y.axes.get_yaxis().set_visible(False)
+    if num < 32:
+        y = fig.add_subplot(4, 8, num + 1)
+        orig = cv2.imread(os.path.join(TEST_DIR, img_name))
+        y.imshow(orig)
+        plt.title(str_label)
+        y.axes.get_xaxis().set_visible(False)
+        y.axes.get_yaxis().set_visible(False)
+
+print("Correct {:0.2f}% Mean time {:0.1f}ms (Total time {:0.3f}s, count {}, false+ve {})".format(100*totalCorrect/totalImages, 1000*totalTime/totalImages, totalTime, totalImages, totalFalsePositives))
 plt.show()
 
