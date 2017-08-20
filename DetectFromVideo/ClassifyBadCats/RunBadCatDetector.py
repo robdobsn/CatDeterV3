@@ -9,7 +9,7 @@ from tflearn.layers.conv import conv_2d, max_pool_2d
 from tflearn.layers.core import input_data, dropout, fully_connected
 from tflearn.layers.estimator import regression
 
-TEST_DIR = 'C:/Users/rob/Dropbox (TheDobsons)/Main/RobDev/Projects/AutomationIoT/DoorCameraAndLocks/Cat Deterrent/CatDeterV3/testImages'
+TEST_DIR = 'C:/Users/rob/Dropbox (TheDobsons)/Main/RobDev/Projects/AutomationIoT/DoorCameraAndLocks/Cat Deterrent/CatDeterV3/nnTestImages'
 IMG_SIZE = 50
 LR = 1e-3
 
@@ -32,16 +32,16 @@ def process_test_data():
     return testing_data
 
 # if you need to create the data:
-#test_data = process_test_data()
+test_data = process_test_data()
 # if you already have some saved:
-test_data = np.load('test_data.npy')
+#test_data = np.load('test_data.npy')
 
 import matplotlib.pyplot as plt
 
 # if you need to create the data:
-# test_data = process_test_data()
+test_data = process_test_data()
 # if you already have some saved:
-test_data = np.load('test_data.npy')
+#test_data = np.load('test_data.npy')
 
 tf.reset_default_graph()
 
@@ -77,8 +77,8 @@ if os.path.exists('C:/Users/rob/Dropbox (TheDobsons)/Main/RobDev/Projects/Automa
 fig = plt.figure()
 
 for num, data in enumerate(test_data[:12]):
-    # cat: [1,0]
-    # dog: [0,1]
+    # bad: [1,0]
+    # good: [0,1]
 
     img_num = data[1]
     img_data = data[0]

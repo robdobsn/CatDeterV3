@@ -348,12 +348,16 @@ class VideoSource():
         fBounds = hBounds/wBounds
         if fReqd > fBounds:
             hBoundsNew = wBounds * fReqd
-            y1 -= max((hBoundsNew-hBounds) / 2, 0)
-            y2 += min((hBoundsNew-hBounds) / 2, h1-1)
+            y1 -= (hBoundsNew-hBounds) / 2
+            y2 += (hBoundsNew-hBounds) / 2
         else:
             wBoundsNew = hBounds / fReqd
-            x1 -= max((wBoundsNew-wBounds) / 2, 0)
-            x2 += min((wBoundsNew-wBounds) / 2, w1-1)
+            x1 -= (wBoundsNew-wBounds) / 2
+            x2 += (wBoundsNew-wBounds) / 2
+        if y1 < 0: y1 = 0
+        if x1 < 0: x1 = 0
+        if y2 >= h1: y2 = h1-1
+        if x2 >= w1: x2 = w1-1
         # Crop the original image
         cropImg = videoFrame[int(y1):int(y2),int(x1):int(x2)]
         # Resize

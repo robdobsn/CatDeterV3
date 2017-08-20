@@ -1,0 +1,925 @@
+	ai	cat	falsePositive	filename	success
+0	Egyptian cat	o	False	8_2017-04-20_16-27-43_000.jpg	1.0
+1	kelpie	o	False	8_2017-04-20_16-27-43_001.jpg	1.0
+2	kelpie	o	False	8_2017-04-20_16-27-43_002.jpg	1.0
+3	schipperke	o	False	8_2017-04-20_16-27-43_003.jpg	1.0
+4	schipperke	o	False	8_2017-04-20_16-27-43_004.jpg	1.0
+5	schipperke	o	False	8_2017-04-20_16-27-43_005.jpg	1.0
+6	Egyptian cat	o	False	8_2017-04-20_16-27-43_006.jpg	1.0
+7	bison	o	False	8_2017-04-20_16-27-43_007.jpg	1.0
+8	giant schnauzer	o	False	8_2017-04-20_16-27-43_008.jpg	1.0
+9	flat-coated retriever	o	False	8_2017-04-20_16-27-43_009.jpg	1.0
+10	Egyptian cat	o	False	8_2017-04-20_16-27-43_010.jpg	1.0
+11	groenendael	o	False	8_2017-04-20_16-27-43_011.jpg	1.0
+12	flat-coated retriever	o	False	8_2017-04-20_16-27-43_012.jpg	1.0
+13	schipperke	o	False	8_2017-04-20_16-27-43_013.jpg	1.0
+14	flat-coated retriever	o	False	8_2017-04-20_16-27-43_014.jpg	1.0
+15	schipperke	o	False	8_2017-04-20_16-27-43_015.jpg	1.0
+16	schipperke	o	False	8_2017-04-20_16-27-43_016.jpg	1.0
+17	kelpie	o	False	8_2017-04-20_16-27-43_017.jpg	1.0
+18	kelpie	o	False	8_2017-04-20_16-27-43_018.jpg	1.0
+19	groenendael	v	False	8_2017-04-26_08-53-17_000.jpg	1.0
+20	flat-coated retriever	v	False	8_2017-04-26_08-53-17_001.jpg	1.0
+21	groenendael	v	False	8_2017-04-26_08-53-17_002.jpg	1.0
+22	groenendael	v	False	8_2017-04-26_08-53-17_003.jpg	1.0
+23	groenendael	v	False	8_2017-04-26_08-53-17_004.jpg	1.0
+24	groenendael	v	False	8_2017-04-26_08-53-17_005.jpg	1.0
+25	schipperke	v	False	8_2017-04-26_08-53-17_006.jpg	1.0
+26	flat-coated retriever	v	False	8_2017-04-26_10-28-12_000.jpg	1.0
+27	curly-coated retriever	v	False	8_2017-04-26_10-28-12_001.jpg	1.0
+28	groenendael	v	False	8_2017-04-26_10-28-12_002.jpg	1.0
+29	groenendael	v	False	8_2017-04-26_12-03-59_000.jpg	1.0
+30	schipperke	v	False	8_2017-04-26_12-03-59_001.jpg	1.0
+31	schipperke	v	False	8_2017-04-26_12-03-59_002.jpg	1.0
+32	schipperke	v	False	8_2017-04-26_12-03-59_003.jpg	1.0
+33	schipperke	v	False	8_2017-04-26_12-03-59_004.jpg	1.0
+34	schipperke	v	False	8_2017-04-26_12-03-59_005.jpg	1.0
+35	schipperke	v	False	8_2017-04-26_12-03-59_006.jpg	1.0
+36	schipperke	v	False	8_2017-04-26_12-03-59_007.jpg	1.0
+37	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_000.jpg	1.0
+38	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_001.jpg	1.0
+39	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_002.jpg	1.0
+40	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_003.jpg	1.0
+41	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_004.jpg	1.0
+42	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_005.jpg	1.0
+43	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_006.jpg	1.0
+44	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_007.jpg	1.0
+45	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_008.jpg	1.0
+46	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_009.jpg	1.0
+47	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_010.jpg	1.0
+48	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_011.jpg	1.0
+49	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_012.jpg	1.0
+50	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_013.jpg	1.0
+51	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_014.jpg	1.0
+52	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_015.jpg	1.0
+53	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_016.jpg	1.0
+54	red wolf, maned wolf, Canis rufus, Canis niger	b	False	8_2017-05-17_08-45-36_017.jpg	0.0
+55	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_018.jpg	1.0
+56	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_019.jpg	1.0
+57	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_020.jpg	1.0
+58	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_021.jpg	1.0
+59	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_022.jpg	1.0
+60	Siamese cat, Siamese	b	False	8_2017-05-17_08-45-36_023.jpg	1.0
+61	schipperke	v	False	8_2017-05-17_09-40-03_000.jpg	1.0
+62	schipperke	v	False	8_2017-05-17_09-40-03_001.jpg	1.0
+63	schipperke	v	False	8_2017-05-17_09-40-03_002.jpg	1.0
+64	schipperke	v	False	8_2017-05-17_09-40-03_003.jpg	1.0
+65	schipperke	v	False	8_2017-05-17_09-40-03_004.jpg	1.0
+66	schipperke	v	False	8_2017-05-17_09-40-03_005.jpg	1.0
+67	groenendael	v	False	8_2017-05-17_09-40-03_006.jpg	1.0
+68	groenendael	v	False	8_2017-05-17_09-40-03_007.jpg	1.0
+69	groenendael	v	False	8_2017-05-17_09-40-03_008.jpg	1.0
+70	schipperke	v	False	8_2017-05-17_09-40-03_009.jpg	1.0
+71	flat-coated retriever	v	False	8_2017-05-17_09-40-03_010.jpg	1.0
+72	groenendael	v	False	8_2017-05-17_09-40-03_011.jpg	1.0
+73	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_000.jpg	1.0
+74	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_001.jpg	1.0
+75	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_002.jpg	1.0
+76	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_003.jpg	1.0
+77	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_004.jpg	1.0
+78	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_005.jpg	1.0
+79	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_006.jpg	1.0
+80	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_007.jpg	1.0
+81	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_008.jpg	1.0
+82	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_009.jpg	1.0
+83	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_010.jpg	1.0
+84	schipperke	c	False	8_2017-05-19_08-43-29_011.jpg	0.0
+85	schipperke	c	False	8_2017-05-19_08-43-29_012.jpg	0.0
+86	schipperke	c	False	8_2017-05-19_08-43-29_013.jpg	0.0
+87	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_014.jpg	1.0
+88	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_015.jpg	1.0
+89	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_016.jpg	1.0
+90	Egyptian cat	c	False	8_2017-05-19_08-43-29_017.jpg	0.0
+91	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_018.jpg	1.0
+92	kelpie	c	False	8_2017-05-19_08-43-29_019.jpg	0.0
+93	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_020.jpg	1.0
+94	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-29_021.jpg	1.0
+95	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-53_000.jpg	1.0
+96	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-53_001.jpg	1.0
+97	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-53_002.jpg	1.0
+98	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-53_003.jpg	1.0
+99	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-53_004.jpg	1.0
+100	German short-haired pointer	c	False	8_2017-05-19_08-43-53_005.jpg	0.0
+101	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-53_006.jpg	1.0
+102	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-53_007.jpg	1.0
+103	Egyptian cat	c	False	8_2017-05-19_08-43-53_008.jpg	0.0
+104	Egyptian cat	c	False	8_2017-05-19_08-43-53_009.jpg	0.0
+105	Egyptian cat	c	False	8_2017-05-19_08-43-53_010.jpg	0.0
+106	Egyptian cat	c	False	8_2017-05-19_08-43-53_011.jpg	0.0
+107	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-53_012.jpg	1.0
+108	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-53_013.jpg	1.0
+109	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-53_014.jpg	1.0
+110	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-53_015.jpg	1.0
+111	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-53_016.jpg	1.0
+112	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-53_017.jpg	1.0
+113	Siamese cat, Siamese	c	False	8_2017-05-19_08-43-53_018.jpg	1.0
+114	Egyptian cat	c	False	8_2017-05-19_08-43-53_019.jpg	0.0
+115	Scottish deerhound, deerhound	c	False	8_2017-05-19_08-43-53_020.jpg	0.0
+116	Tibetan mastiff	v	False	8_2017-05-19_16-38-18_000.jpg	1.0
+117	Old English sheepdog, bobtail	v	False	8_2017-05-19_16-38-18_001.jpg	1.0
+118	vault	v	False	8_2017-05-19_16-38-18_002.jpg	1.0
+119	cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM	v	False	8_2017-05-19_16-38-18_003.jpg	1.0
+120	schipperke	v	False	8_2017-07-17_10-12-12_000.jpg	1.0
+121	Egyptian cat	v	False	8_2017-07-17_10-12-12_001.jpg	1.0
+122	kelpie	v	False	8_2017-07-17_10-12-12_002.jpg	1.0
+123	schipperke	v	False	8_2017-07-17_10-12-12_003.jpg	1.0
+124	Egyptian cat	v	False	8_2017-07-17_10-12-12_004.jpg	1.0
+125	groenendael	v	False	8_2017-07-17_10-12-12_005.jpg	1.0
+126	flat-coated retriever	v	False	8_2017-07-17_10-12-12_006.jpg	1.0
+127	groenendael	v	False	8_2017-07-17_10-12-12_007.jpg	1.0
+128	curly-coated retriever	v	False	8_2017-07-17_10-12-12_008.jpg	1.0
+129	flat-coated retriever	v	False	8_2017-07-17_10-12-12_009.jpg	1.0
+130	groenendael	v	False	8_2017-07-17_10-12-12_010.jpg	1.0
+131	groenendael	v	False	8_2017-07-17_10-12-12_011.jpg	1.0
+132	schipperke	v	False	8_2017-07-17_10-12-12_012.jpg	1.0
+133	schipperke	v	False	8_2017-07-17_10-12-12_013.jpg	1.0
+134	schipperke	v	False	8_2017-07-17_10-12-12_014.jpg	1.0
+135	flat-coated retriever	v	False	8_2017-07-17_10-39-38_000.jpg	1.0
+136	flat-coated retriever	v	False	8_2017-07-17_10-39-38_001.jpg	1.0
+137	schipperke	v	False	8_2017-07-17_10-39-38_002.jpg	1.0
+138	schipperke	v	False	8_2017-07-17_10-39-38_003.jpg	1.0
+139	schipperke	v	False	8_2017-07-17_10-39-38_004.jpg	1.0
+140	curly-coated retriever	v	False	8_2017-07-17_10-39-38_005.jpg	1.0
+141	flat-coated retriever	v	False	8_2017-07-17_10-39-38_006.jpg	1.0
+142	schipperke	v	False	8_2017-07-17_10-39-38_007.jpg	1.0
+143	schipperke	v	False	8_2017-07-17_10-39-38_008.jpg	1.0
+144	schipperke	v	False	8_2017-07-17_10-39-38_009.jpg	1.0
+145	schipperke	v	False	8_2017-07-17_11-33-59_000.jpg	1.0
+146	curly-coated retriever	v	False	8_2017-07-17_11-33-59_001.jpg	1.0
+147	kelpie	v	False	8_2017-07-17_11-33-59_002.jpg	1.0
+148	kelpie	v	False	8_2017-07-17_11-33-59_003.jpg	1.0
+149	curly-coated retriever	v	False	8_2017-07-17_11-33-59_004.jpg	1.0
+150	groenendael	v	False	8_2017-07-17_11-33-59_005.jpg	1.0
+151	groenendael	v	False	8_2017-07-17_11-33-59_006.jpg	1.0
+152	curly-coated retriever	v	False	8_2017-07-17_11-33-59_007.jpg	1.0
+153	curly-coated retriever	v	False	8_2017-07-17_11-33-59_008.jpg	1.0
+154	groenendael	v	False	8_2017-07-17_11-33-59_009.jpg	1.0
+155	groenendael	v	False	8_2017-07-17_11-33-59_010.jpg	1.0
+156	groenendael	v	False	8_2017-07-17_11-33-59_011.jpg	1.0
+157	curly-coated retriever	v	False	8_2017-07-17_11-33-59_012.jpg	1.0
+158	curly-coated retriever	v	False	8_2017-07-17_11-33-59_013.jpg	1.0
+159	groenendael	v	False	8_2017-07-17_11-33-59_014.jpg	1.0
+160	schipperke	v	False	8_2017-07-17_11-33-59_015.jpg	1.0
+161	schipperke	v	False	8_2017-07-17_11-33-59_016.jpg	1.0
+162	schipperke	v	False	8_2017-07-17_11-33-59_017.jpg	1.0
+163	curly-coated retriever	v	False	8_2017-07-17_11-33-59_018.jpg	1.0
+164	flat-coated retriever	v	False	8_2017-07-17_16-50-16_000.jpg	1.0
+165	kelpie	v	False	8_2017-07-17_16-50-16_001.jpg	1.0
+166	Egyptian cat	v	False	8_2017-07-17_16-50-16_002.jpg	1.0
+167	Egyptian cat	v	False	8_2017-07-17_16-50-16_003.jpg	1.0
+168	groenendael	v	False	8_2017-07-17_16-50-16_004.jpg	1.0
+169	groenendael	v	False	8_2017-07-17_16-50-16_005.jpg	1.0
+170	flat-coated retriever	v	False	8_2017-07-17_16-50-16_006.jpg	1.0
+171	schipperke	v	False	8_2017-07-17_16-50-16_007.jpg	1.0
+172	flat-coated retriever	v	False	8_2017-07-17_16-50-16_008.jpg	1.0
+173	flat-coated retriever	v	False	8_2017-07-17_16-50-16_009.jpg	1.0
+174	flat-coated retriever	v	False	8_2017-07-17_16-50-16_010.jpg	1.0
+175	flat-coated retriever	v	False	8_2017-07-17_16-50-16_011.jpg	1.0
+176	schipperke	v	False	8_2017-07-17_16-50-16_012.jpg	1.0
+177	flat-coated retriever	v	False	8_2017-07-17_16-50-16_013.jpg	1.0
+178	flat-coated retriever	v	False	8_2017-07-17_16-50-16_014.jpg	1.0
+179	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_000.jpg	1.0
+180	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_001.jpg	1.0
+181	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_002.jpg	1.0
+182	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_003.jpg	1.0
+183	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_004.jpg	1.0
+184	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_005.jpg	1.0
+185	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_006.jpg	1.0
+186	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_007.jpg	1.0
+187	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_008.jpg	1.0
+188	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_009.jpg	1.0
+189	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_010.jpg	1.0
+190	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_011.jpg	1.0
+191	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_012.jpg	1.0
+192	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_013.jpg	1.0
+193	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_014.jpg	1.0
+194	Siamese cat, Siamese	b	False	8_2017-07-19_06-00-49_015.jpg	1.0
+195	schipperke	v	False	8_2017-07-19_06-02-57_000.jpg	1.0
+196	flat-coated retriever	v	False	8_2017-07-19_08-44-12_000.jpg	1.0
+197	groenendael	v	False	8_2017-07-19_08-44-12_001.jpg	1.0
+198	kelpie	v	False	8_2017-07-19_08-44-12_002.jpg	1.0
+199	kelpie	v	False	8_2017-07-19_08-44-12_003.jpg	1.0
+200	Egyptian cat	v	False	8_2017-07-19_08-44-12_004.jpg	1.0
+201	Egyptian cat	v	False	8_2017-07-19_08-44-12_005.jpg	1.0
+202	groenendael	v	False	8_2017-07-19_08-44-12_006.jpg	1.0
+203	schipperke	v	False	8_2017-07-19_08-44-12_007.jpg	1.0
+204	groenendael	v	False	8_2017-07-19_08-44-12_008.jpg	1.0
+205	flat-coated retriever	v	False	8_2017-07-19_08-44-12_009.jpg	1.0
+206	flat-coated retriever	v	False	8_2017-07-19_08-44-12_010.jpg	1.0
+207	flat-coated retriever	v	False	8_2017-07-19_08-44-12_011.jpg	1.0
+208	flat-coated retriever	v	False	8_2017-07-19_08-44-12_012.jpg	1.0
+209	flat-coated retriever	v	False	8_2017-07-19_08-44-12_013.jpg	1.0
+210	groenendael	v	False	8_2017-07-19_08-44-12_014.jpg	1.0
+211	Siamese cat, Siamese	b	False	8_2017-07-20_05-06-30_000.jpg	1.0
+212	Siamese cat, Siamese	b	False	8_2017-07-20_05-06-30_001.jpg	1.0
+213	Siamese cat, Siamese	b	False	8_2017-07-20_05-06-30_002.jpg	1.0
+214	Siamese cat, Siamese	b	False	8_2017-07-20_05-06-30_003.jpg	1.0
+215	Siamese cat, Siamese	b	False	8_2017-07-20_05-06-30_004.jpg	1.0
+216	Siamese cat, Siamese	b	False	8_2017-07-20_05-06-30_005.jpg	1.0
+217	Siamese cat, Siamese	b	False	8_2017-07-20_05-06-30_006.jpg	1.0
+218	Siamese cat, Siamese	b	False	8_2017-07-20_05-06-30_007.jpg	1.0
+219	Siamese cat, Siamese	b	False	8_2017-07-20_05-06-30_008.jpg	1.0
+220	Siamese cat, Siamese	b	False	8_2017-07-20_05-06-30_009.jpg	1.0
+221	Siamese cat, Siamese	b	False	8_2017-07-20_05-06-30_010.jpg	1.0
+222	Egyptian cat	o	False	8_2017-07-20_08-06-41_000.jpg	1.0
+223	Border collie	o	False	8_2017-07-20_08-06-41_001.jpg	1.0
+224	Boston bull, Boston terrier	o	False	8_2017-07-20_08-06-41_002.jpg	1.0
+225	Staffordshire bullterrier, Staffordshire bull terrier	o	False	8_2017-07-20_08-06-41_003.jpg	1.0
+226	flat-coated retriever	v	False	8_2017-07-20_09-27-58_000.jpg	1.0
+227	flat-coated retriever	v	False	8_2017-07-20_09-27-58_001.jpg	1.0
+228	flat-coated retriever	v	False	8_2017-07-20_09-27-58_002.jpg	1.0
+229	schipperke	v	False	8_2017-07-20_09-27-58_003.jpg	1.0
+230	groenendael	v	False	8_2017-07-20_09-27-58_004.jpg	1.0
+231	flat-coated retriever	v	False	8_2017-07-20_09-27-58_005.jpg	1.0
+232	flat-coated retriever	v	False	8_2017-07-20_09-27-58_006.jpg	1.0
+233	flat-coated retriever	v	False	8_2017-07-20_09-27-58_007.jpg	1.0
+234	groenendael	v	False	8_2017-07-20_09-27-58_008.jpg	1.0
+235	schipperke	v	False	8_2017-07-20_09-27-58_009.jpg	1.0
+236	flat-coated retriever	v	False	8_2017-07-20_09-27-58_010.jpg	1.0
+237	groenendael	v	False	8_2017-07-20_09-27-58_011.jpg	1.0
+238	flat-coated retriever	v	False	8_2017-07-20_09-27-58_012.jpg	1.0
+239	flat-coated retriever	v	False	8_2017-07-20_09-27-58_013.jpg	1.0
+240	flat-coated retriever	v	False	8_2017-07-20_09-27-58_014.jpg	1.0
+241	flat-coated retriever	v	False	8_2017-07-20_09-27-58_015.jpg	1.0
+242	flat-coated retriever	v	False	8_2017-07-20_09-27-58_016.jpg	1.0
+243	flat-coated retriever	v	False	8_2017-07-20_09-27-58_017.jpg	1.0
+244	kelpie	v	False	8_2017-07-20_09-27-58_018.jpg	1.0
+245	kelpie	v	False	8_2017-07-20_09-27-58_019.jpg	1.0
+246	kelpie	v	False	8_2017-07-20_09-27-58_020.jpg	1.0
+247	Egyptian cat	v	False	8_2017-07-20_09-27-58_021.jpg	1.0
+248	Egyptian cat	v	False	8_2017-07-20_09-27-58_022.jpg	1.0
+249	Egyptian cat	v	False	8_2017-07-20_09-27-58_023.jpg	1.0
+250	flat-coated retriever	v	False	8_2017-07-20_09-27-58_024.jpg	1.0
+251	flat-coated retriever	v	False	8_2017-07-20_09-27-58_025.jpg	1.0
+252	flat-coated retriever	v	False	8_2017-07-20_09-27-58_026.jpg	1.0
+253	flat-coated retriever	v	False	8_2017-07-20_09-27-58_027.jpg	1.0
+254	flat-coated retriever	v	False	8_2017-07-20_09-27-58_028.jpg	1.0
+255	flat-coated retriever	v	False	8_2017-07-20_09-27-58_029.jpg	1.0
+256	Egyptian cat	v	False	8_2017-07-20_09-27-58_030.jpg	1.0
+257	Egyptian cat	v	False	8_2017-07-20_09-27-58_031.jpg	1.0
+258	flat-coated retriever	v	False	8_2017-07-20_09-27-58_032.jpg	1.0
+259	Egyptian cat	v	False	8_2017-07-20_09-27-58_033.jpg	1.0
+260	Egyptian cat	v	False	8_2017-07-20_09-27-58_034.jpg	1.0
+261	Egyptian cat	v	False	8_2017-07-20_09-27-58_035.jpg	1.0
+262	Egyptian cat	v	False	8_2017-07-20_09-27-58_036.jpg	1.0
+263	Egyptian cat	v	False	8_2017-07-20_09-27-58_037.jpg	1.0
+264	kelpie	v	False	8_2017-07-20_12-56-35_000.jpg	1.0
+265	groenendael	v	False	8_2017-07-20_12-56-35_001.jpg	1.0
+266	flat-coated retriever	v	False	8_2017-07-20_12-56-35_002.jpg	1.0
+267	groenendael	v	False	8_2017-07-20_12-56-35_003.jpg	1.0
+268	flat-coated retriever	v	False	8_2017-07-20_12-56-35_004.jpg	1.0
+269	flat-coated retriever	v	False	8_2017-07-20_12-56-35_005.jpg	1.0
+270	schipperke	v	False	8_2017-07-20_12-56-35_006.jpg	1.0
+271	schipperke	v	False	8_2017-07-20_12-56-35_007.jpg	1.0
+272	groenendael	v	False	8_2017-07-20_12-56-35_008.jpg	1.0
+273	curly-coated retriever	v	False	8_2017-07-20_12-56-35_009.jpg	1.0
+274	groenendael	v	False	8_2017-07-20_12-56-35_010.jpg	1.0
+275	schipperke	v	False	8_2017-07-20_12-56-35_011.jpg	1.0
+276	curly-coated retriever	v	False	8_2017-07-20_12-56-35_012.jpg	1.0
+277	hog, pig, grunter, squealer, Sus scrofa	b	False	8_2017-07-22_05-22-55_000.jpg	0.0
+278	Siamese cat, Siamese	b	False	8_2017-07-22_05-22-55_001.jpg	1.0
+279	Siamese cat, Siamese	b	False	8_2017-07-22_05-22-55_002.jpg	1.0
+280	Siamese cat, Siamese	b	False	8_2017-07-22_05-22-55_003.jpg	1.0
+281	Siamese cat, Siamese	b	False	8_2017-07-22_05-22-55_004.jpg	1.0
+282	Siamese cat, Siamese	b	False	8_2017-07-22_05-22-55_005.jpg	1.0
+283	Siamese cat, Siamese	b	False	8_2017-07-22_05-22-55_006.jpg	1.0
+284	Mexican hairless	b	False	8_2017-07-22_05-22-55_007.jpg	0.0
+285	kelpie	b	False	8_2017-07-22_10-04-21_000.jpg	0.0
+286	Siamese cat, Siamese	b	False	8_2017-07-22_10-04-21_001.jpg	1.0
+287	Weimaraner	b	False	8_2017-07-22_10-04-21_002.jpg	0.0
+288	oxcart	b	False	8_2017-07-22_10-10-03_000.jpg	0.0
+289	ox	b	False	8_2017-07-22_10-10-03_001.jpg	0.0
+290	Siamese cat, Siamese	b	False	8_2017-07-22_10-10-03_002.jpg	1.0
+291	schipperke	v	False	8_2017-07-22_11-30-12_000.jpg	1.0
+292	schipperke	v	False	8_2017-07-22_11-30-12_001.jpg	1.0
+293	schipperke	v	False	8_2017-07-22_11-30-12_002.jpg	1.0
+294	schipperke	v	False	8_2017-07-22_11-30-12_003.jpg	1.0
+295	schipperke	v	False	8_2017-07-22_11-30-12_004.jpg	1.0
+296	schipperke	v	False	8_2017-07-22_11-30-12_005.jpg	1.0
+297	schipperke	v	False	8_2017-07-22_11-30-12_006.jpg	1.0
+298	schipperke	v	False	8_2017-07-22_11-30-12_007.jpg	1.0
+299	schipperke	v	False	8_2017-07-22_11-30-12_008.jpg	1.0
+300	schipperke	v	False	8_2017-07-22_11-30-12_009.jpg	1.0
+301	Egyptian cat	v	False	8_2017-07-22_11-30-12_010.jpg	1.0
+302	Egyptian cat	v	False	8_2017-07-22_11-30-12_011.jpg	1.0
+303	Egyptian cat	v	False	8_2017-07-22_11-30-12_012.jpg	1.0
+304	Egyptian cat	v	False	8_2017-07-22_11-30-12_013.jpg	1.0
+305	Egyptian cat	v	False	8_2017-07-22_11-30-12_014.jpg	1.0
+306	flat-coated retriever	v	False	8_2017-07-22_11-30-12_015.jpg	1.0
+307	flat-coated retriever	v	False	8_2017-07-22_11-30-12_016.jpg	1.0
+308	schipperke	v	False	8_2017-07-22_14-50-09_000.jpg	1.0
+309	kelpie	v	False	8_2017-07-22_14-50-09_001.jpg	1.0
+310	schipperke	v	False	8_2017-07-22_14-50-09_002.jpg	1.0
+311	flat-coated retriever	v	False	8_2017-07-22_14-50-09_003.jpg	1.0
+312	groenendael	v	False	8_2017-07-22_14-50-09_004.jpg	1.0
+313	schipperke	v	False	8_2017-07-22_14-50-09_005.jpg	1.0
+314	schipperke	v	False	8_2017-07-22_14-50-09_006.jpg	1.0
+315	Egyptian cat	v	False	8_2017-07-22_14-50-09_007.jpg	1.0
+316	schipperke	v	False	8_2017-07-22_14-50-09_008.jpg	1.0
+317	Egyptian cat	v	False	8_2017-07-22_14-50-09_009.jpg	1.0
+318	Egyptian cat	v	False	8_2017-07-22_14-50-09_010.jpg	1.0
+319	schipperke	v	False	8_2017-07-22_14-50-09_011.jpg	1.0
+320	Egyptian cat	v	False	8_2017-07-22_14-50-09_012.jpg	1.0
+321	Siamese cat, Siamese	b	False	8_2017-07-23_04-59-39_000.jpg	1.0
+322	Siamese cat, Siamese	b	False	8_2017-07-23_04-59-39_001.jpg	1.0
+323	Siamese cat, Siamese	b	False	8_2017-07-23_05-57-14_000.jpg	1.0
+324	Siamese cat, Siamese	b	False	8_2017-07-23_05-57-14_001.jpg	1.0
+325	Siamese cat, Siamese	b	False	8_2017-07-23_05-57-14_002.jpg	1.0
+326	Siamese cat, Siamese	b	False	8_2017-07-23_05-57-14_003.jpg	1.0
+327	Siamese cat, Siamese	b	False	8_2017-07-23_05-57-14_004.jpg	1.0
+328	oxcart	b	False	8_2017-07-23_06-06-28_000.jpg	0.0
+329	schipperke	b	False	8_2017-07-23_06-06-28_001.jpg	0.0
+330	Mexican hairless	b	False	8_2017-07-23_06-06-28_002.jpg	0.0
+331	hog, pig, grunter, squealer, Sus scrofa	b	False	8_2017-07-23_06-06-28_003.jpg	0.0
+332	ox	b	False	8_2017-07-23_06-06-28_004.jpg	0.0
+333	Siamese cat, Siamese	b	False	8_2017-07-23_06-06-28_005.jpg	1.0
+334	Siamese cat, Siamese	b	False	8_2017-07-23_06-06-28_006.jpg	1.0
+335	Mexican hairless	b	False	8_2017-07-23_06-08-03_000.jpg	0.0
+336	Egyptian cat	b	False	8_2017-07-23_06-08-03_001.jpg	0.0
+337	Siamese cat, Siamese	b	False	8_2017-07-23_06-08-03_002.jpg	1.0
+338	Siamese cat, Siamese	b	False	8_2017-07-23_06-08-03_003.jpg	1.0
+339	Mexican hairless	b	False	8_2017-07-23_06-08-03_004.jpg	0.0
+340	Siamese cat, Siamese	b	False	8_2017-07-23_08-46-40_000.jpg	1.0
+341	Siamese cat, Siamese	b	False	8_2017-07-23_08-46-40_001.jpg	1.0
+342	Siamese cat, Siamese	b	False	8_2017-07-23_08-46-40_002.jpg	1.0
+343	Siamese cat, Siamese	b	False	8_2017-07-23_08-46-40_003.jpg	1.0
+344	Siamese cat, Siamese	b	False	8_2017-07-23_08-46-40_004.jpg	1.0
+345	Siamese cat, Siamese	b	False	8_2017-07-23_08-46-40_005.jpg	1.0
+346	Siamese cat, Siamese	b	False	8_2017-07-23_10-27-28_000.jpg	1.0
+347	Siamese cat, Siamese	b	False	8_2017-07-23_10-27-28_001.jpg	1.0
+348	Siamese cat, Siamese	b	False	8_2017-07-23_10-27-28_002.jpg	1.0
+349	Siamese cat, Siamese	b	False	8_2017-07-23_10-27-28_003.jpg	1.0
+350	Mexican hairless	b	False	8_2017-07-23_10-33-26_000.jpg	0.0
+351	Siamese cat, Siamese	b	False	8_2017-07-23_10-33-26_001.jpg	1.0
+352	Siamese cat, Siamese	b	False	8_2017-07-23_10-33-26_002.jpg	1.0
+353	Siamese cat, Siamese	b	False	8_2017-07-23_10-33-26_003.jpg	1.0
+354	Siamese cat, Siamese	b	False	8_2017-07-23_10-33-26_004.jpg	1.0
+355	schipperke	v	False	8_2017-07-23_11-01-51_000.jpg	1.0
+356	schipperke	v	False	8_2017-07-23_11-01-51_001.jpg	1.0
+357	schipperke	v	False	8_2017-07-23_11-01-51_002.jpg	1.0
+358	schipperke	v	False	8_2017-07-23_11-01-51_003.jpg	1.0
+359	schipperke	v	False	8_2017-07-23_11-01-51_004.jpg	1.0
+360	schipperke	v	False	8_2017-07-23_11-01-51_005.jpg	1.0
+361	schipperke	v	False	8_2017-07-23_11-01-51_006.jpg	1.0
+362	schipperke	v	False	8_2017-07-23_11-01-51_007.jpg	1.0
+363	schipperke	v	False	8_2017-07-23_11-01-51_008.jpg	1.0
+364	flat-coated retriever	v	False	8_2017-07-23_11-01-51_009.jpg	1.0
+365	giant schnauzer	v	False	8_2017-07-23_11-01-51_010.jpg	1.0
+366	groenendael	v	False	8_2017-07-23_11-01-51_011.jpg	1.0
+367	groenendael	v	False	8_2017-07-23_11-01-51_012.jpg	1.0
+368	groenendael	v	False	8_2017-07-23_11-01-51_013.jpg	1.0
+369	groenendael	v	False	8_2017-07-23_11-01-51_014.jpg	1.0
+370	schipperke	v	False	8_2017-07-23_14-18-22_000.jpg	1.0
+371	schipperke	v	False	8_2017-07-23_14-18-22_001.jpg	1.0
+372	schipperke	v	False	8_2017-07-23_14-18-22_002.jpg	1.0
+373	schipperke	v	False	8_2017-07-23_14-18-22_003.jpg	1.0
+374	Egyptian cat	v	False	8_2017-07-23_14-45-51_000.jpg	1.0
+375	Egyptian cat	v	False	8_2017-07-23_14-45-51_001.jpg	1.0
+376	kelpie	v	False	8_2017-07-23_14-45-51_002.jpg	1.0
+377	flat-coated retriever	v	False	8_2017-07-23_14-45-51_003.jpg	1.0
+378	flat-coated retriever	v	False	8_2017-07-23_14-45-51_004.jpg	1.0
+379	flat-coated retriever	v	False	8_2017-07-23_14-45-51_005.jpg	1.0
+380	schipperke	v	False	8_2017-07-23_14-45-51_006.jpg	1.0
+381	flat-coated retriever	v	False	8_2017-07-23_14-45-51_007.jpg	1.0
+382	flat-coated retriever	v	False	8_2017-07-23_14-45-51_008.jpg	1.0
+383	flat-coated retriever	v	False	8_2017-07-23_14-45-51_009.jpg	1.0
+384	flat-coated retriever	v	False	8_2017-07-23_14-45-51_010.jpg	1.0
+385	flat-coated retriever	v	False	8_2017-07-23_14-45-51_011.jpg	1.0
+386	groenendael	v	False	8_2017-07-23_14-45-51_012.jpg	1.0
+387	flat-coated retriever	v	False	8_2017-07-23_16-40-59_000.jpg	1.0
+388	flat-coated retriever	v	False	8_2017-07-23_16-40-59_001.jpg	1.0
+389	flat-coated retriever	v	False	8_2017-07-23_16-40-59_002.jpg	1.0
+390	flat-coated retriever	v	False	8_2017-07-23_16-40-59_003.jpg	1.0
+391	Egyptian cat	v	False	8_2017-07-23_16-40-59_004.jpg	1.0
+392	curly-coated retriever	v	False	8_2017-07-23_16-40-59_005.jpg	1.0
+393	curly-coated retriever	v	False	8_2017-07-23_16-40-59_006.jpg	1.0
+394	curly-coated retriever	v	False	8_2017-07-23_16-40-59_007.jpg	1.0
+395	flat-coated retriever	v	False	8_2017-07-23_16-40-59_008.jpg	1.0
+396	flat-coated retriever	v	False	8_2017-07-23_16-40-59_009.jpg	1.0
+397	groenendael	v	False	8_2017-07-23_16-40-59_010.jpg	1.0
+398	curly-coated retriever	v	False	8_2017-07-23_16-40-59_011.jpg	1.0
+399	curly-coated retriever	v	False	8_2017-07-23_16-40-59_012.jpg	1.0
+400	groenendael	v	False	8_2017-07-23_16-40-59_013.jpg	1.0
+401	schipperke	v	False	8_2017-07-23_16-40-59_014.jpg	1.0
+402	schipperke	v	False	8_2017-07-23_16-40-59_015.jpg	1.0
+403	schipperke	v	False	8_2017-07-23_16-46-41_000.jpg	1.0
+404	schipperke	v	False	8_2017-07-23_16-46-41_001.jpg	1.0
+405	schipperke	v	False	8_2017-07-23_16-46-41_002.jpg	1.0
+406	schipperke	v	False	8_2017-07-23_16-46-41_003.jpg	1.0
+407	groenendael	v	False	8_2017-07-23_16-46-41_004.jpg	1.0
+408	schipperke	v	False	8_2017-07-23_16-46-41_005.jpg	1.0
+409	schipperke	v	False	8_2017-07-23_16-46-41_006.jpg	1.0
+410	Egyptian cat	v	False	8_2017-07-23_16-46-41_007.jpg	1.0
+411	schipperke	v	False	8_2017-07-23_16-46-41_008.jpg	1.0
+412	schipperke	v	False	8_2017-07-23_16-46-41_009.jpg	1.0
+413	schipperke	v	False	8_2017-07-23_16-46-41_010.jpg	1.0
+414	kelpie	v	False	8_2017-07-23_16-46-41_011.jpg	1.0
+415	Egyptian cat	v	False	8_2017-07-23_16-46-41_012.jpg	1.0
+416	Egyptian cat	v	False	8_2017-07-23_16-46-41_013.jpg	1.0
+417	flat-coated retriever	v	False	8_2017-07-23_16-46-41_014.jpg	1.0
+418	flat-coated retriever	v	False	8_2017-07-23_16-46-41_015.jpg	1.0
+419	flat-coated retriever	v	False	8_2017-07-23_16-46-41_016.jpg	1.0
+420	flat-coated retriever	v	False	8_2017-07-23_16-46-41_017.jpg	1.0
+421	flat-coated retriever	v	False	8_2017-07-23_16-46-41_018.jpg	1.0
+422	flat-coated retriever	v	False	8_2017-07-23_16-46-41_019.jpg	1.0
+423	groenendael	v	False	8_2017-07-23_16-46-41_020.jpg	1.0
+424	Egyptian cat	v	False	8_2017-07-23_16-46-41_021.jpg	1.0
+425	Egyptian cat	v	False	8_2017-07-23_16-46-41_022.jpg	1.0
+426	Egyptian cat	v	False	8_2017-07-23_16-46-41_023.jpg	1.0
+427	Egyptian cat	v	False	8_2017-07-23_16-46-41_024.jpg	1.0
+428	schipperke	v	False	8_2017-07-23_16-46-41_025.jpg	1.0
+429	Egyptian cat	v	False	8_2017-07-23_16-46-41_026.jpg	1.0
+430	Egyptian cat	v	False	8_2017-07-23_16-46-41_027.jpg	1.0
+431	Egyptian cat	v	False	8_2017-07-23_16-46-41_028.jpg	1.0
+432	Egyptian cat	v	False	8_2017-07-23_16-46-41_029.jpg	1.0
+433	Egyptian cat	v	False	8_2017-07-23_16-46-41_030.jpg	1.0
+434	Egyptian cat	v	False	8_2017-07-23_16-46-41_031.jpg	1.0
+435	Egyptian cat	v	False	8_2017-07-23_16-46-41_032.jpg	1.0
+436	Egyptian cat	v	False	8_2017-07-23_16-46-41_033.jpg	1.0
+437	Egyptian cat	v	False	8_2017-07-23_16-46-41_034.jpg	1.0
+438	Egyptian cat	v	False	8_2017-07-23_16-46-41_035.jpg	1.0
+439	Egyptian cat	v	False	8_2017-07-23_16-46-41_036.jpg	1.0
+440	Egyptian cat	v	False	8_2017-07-23_16-46-41_037.jpg	1.0
+441	Egyptian cat	v	False	8_2017-07-23_16-46-41_038.jpg	1.0
+442	Egyptian cat	v	False	8_2017-07-23_16-46-41_039.jpg	1.0
+443	Egyptian cat	v	False	8_2017-07-23_16-46-41_040.jpg	1.0
+444	Egyptian cat	v	False	8_2017-07-23_16-46-41_041.jpg	1.0
+445	Egyptian cat	v	False	8_2017-07-23_16-46-41_042.jpg	1.0
+446	Egyptian cat	v	False	8_2017-07-23_16-46-41_043.jpg	1.0
+447	Egyptian cat	v	False	8_2017-07-23_16-46-41_044.jpg	1.0
+448	Egyptian cat	v	False	8_2017-07-23_16-46-41_045.jpg	1.0
+449	Egyptian cat	v	False	8_2017-07-23_16-46-41_046.jpg	1.0
+450	Egyptian cat	v	False	8_2017-07-23_16-46-41_047.jpg	1.0
+451	Egyptian cat	v	False	8_2017-07-23_16-46-41_048.jpg	1.0
+452	Egyptian cat	v	False	8_2017-07-23_16-46-41_049.jpg	1.0
+453	Egyptian cat	v	False	8_2017-07-23_16-46-41_050.jpg	1.0
+454	Egyptian cat	v	False	8_2017-07-23_16-46-41_051.jpg	1.0
+455	Egyptian cat	v	False	8_2017-07-23_16-46-41_052.jpg	1.0
+456	Egyptian cat	v	False	8_2017-07-23_16-46-41_053.jpg	1.0
+457	Egyptian cat	v	False	8_2017-07-23_16-46-41_054.jpg	1.0
+458	Egyptian cat	v	False	8_2017-07-23_16-46-41_055.jpg	1.0
+459	Egyptian cat	v	False	8_2017-07-23_16-46-41_056.jpg	1.0
+460	Egyptian cat	v	False	8_2017-07-23_16-46-41_057.jpg	1.0
+461	Egyptian cat	v	False	8_2017-07-23_16-46-41_058.jpg	1.0
+462	Egyptian cat	v	False	8_2017-07-23_16-46-41_059.jpg	1.0
+463	Egyptian cat	v	False	8_2017-07-23_16-46-41_060.jpg	1.0
+464	schipperke	v	False	8_2017-07-23_16-46-41_061.jpg	1.0
+465	groenendael	v	False	8_2017-07-23_16-46-41_062.jpg	1.0
+466	groenendael	v	False	8_2017-07-23_16-46-41_063.jpg	1.0
+467	Egyptian cat	v	False	8_2017-07-23_16-46-41_064.jpg	1.0
+468	Egyptian cat	v	False	8_2017-07-23_16-46-41_065.jpg	1.0
+469	Egyptian cat	v	False	8_2017-07-23_16-46-41_066.jpg	1.0
+470	Egyptian cat	v	False	8_2017-07-23_16-46-41_067.jpg	1.0
+471	kelpie	v	False	8_2017-07-23_16-46-41_068.jpg	1.0
+472	schipperke	v	False	8_2017-07-23_16-46-41_069.jpg	1.0
+473	schipperke	v	False	8_2017-07-23_16-46-41_070.jpg	1.0
+474	schipperke	v	False	8_2017-07-23_16-46-41_071.jpg	1.0
+475	schipperke	v	False	8_2017-07-23_16-46-41_072.jpg	1.0
+476	schipperke	v	False	8_2017-07-23_16-46-41_073.jpg	1.0
+477	schipperke	v	False	8_2017-07-23_16-46-41_074.jpg	1.0
+478	ox	b	False	8_2017-07-23_20-10-55_000.jpg	0.0
+479	Siamese cat, Siamese	b	False	8_2017-07-23_20-23-59_000.jpg	1.0
+480	Siamese cat, Siamese	b	False	8_2017-07-23_20-23-59_001.jpg	1.0
+481	Siamese cat, Siamese	b	False	8_2017-07-23_20-23-59_002.jpg	1.0
+482	Siamese cat, Siamese	b	False	8_2017-07-23_20-23-59_003.jpg	1.0
+483	Siamese cat, Siamese	b	False	8_2017-07-23_20-23-59_004.jpg	1.0
+484	Siamese cat, Siamese	b	False	8_2017-07-23_20-23-59_005.jpg	1.0
+485	Siamese cat, Siamese	b	False	8_2017-07-23_20-23-59_006.jpg	1.0
+486	Siamese cat, Siamese	b	False	8_2017-07-23_20-23-59_007.jpg	1.0
+487	skunk, polecat, wood pussy	v	False	8_2017-07-24_05-18-38_000.jpg	1.0
+488	skunk, polecat, wood pussy	v	False	8_2017-07-24_05-18-38_001.jpg	1.0
+489	skunk, polecat, wood pussy	v	False	8_2017-07-24_05-18-38_002.jpg	1.0
+490	vault	v	False	8_2017-07-24_05-18-38_003.jpg	1.0
+491	vault	v	False	8_2017-07-24_05-18-38_004.jpg	1.0
+492	vault	v	False	8_2017-07-24_05-18-38_005.jpg	1.0
+493	vault	v	False	8_2017-07-24_05-18-38_006.jpg	1.0
+494	vault	v	False	8_2017-07-24_05-18-38_007.jpg	1.0
+495	vault	v	False	8_2017-07-24_05-18-38_008.jpg	1.0
+496	vault	v	False	8_2017-07-24_05-18-38_009.jpg	1.0
+497	vault	v	False	8_2017-07-24_05-18-38_010.jpg	1.0
+498	vault	v	False	8_2017-07-24_05-18-38_011.jpg	1.0
+499	vault	v	False	8_2017-07-24_05-18-38_012.jpg	1.0
+500	vault	v	False	8_2017-07-24_05-18-38_013.jpg	1.0
+501	vault	v	False	8_2017-07-24_05-18-38_014.jpg	1.0
+502	vault	v	False	8_2017-07-24_05-18-38_015.jpg	1.0
+503	vault	v	False	8_2017-07-24_05-18-38_016.jpg	1.0
+504	vault	v	False	8_2017-07-24_05-18-38_017.jpg	1.0
+505	vault	v	False	8_2017-07-24_05-18-38_018.jpg	1.0
+506	vault	v	False	8_2017-07-24_05-18-38_019.jpg	1.0
+507	vault	v	False	8_2017-07-24_05-18-38_020.jpg	1.0
+508	vault	v	False	8_2017-07-24_05-18-38_021.jpg	1.0
+509	vault	v	False	8_2017-07-24_05-18-38_022.jpg	1.0
+510	vault	v	False	8_2017-07-24_05-18-38_023.jpg	1.0
+511	vault	v	False	8_2017-07-24_05-18-38_024.jpg	1.0
+512	vault	v	False	8_2017-07-24_05-18-38_025.jpg	1.0
+513	vault	v	False	8_2017-07-24_05-18-38_026.jpg	1.0
+514	vault	v	False	8_2017-07-24_05-18-38_027.jpg	1.0
+515	vault	v	False	8_2017-07-24_05-18-38_028.jpg	1.0
+516	vault	v	False	8_2017-07-24_05-18-38_029.jpg	1.0
+517	vault	v	False	8_2017-07-24_05-18-38_030.jpg	1.0
+518	vault	v	False	8_2017-07-24_05-18-38_031.jpg	1.0
+519	vault	v	False	8_2017-07-24_05-18-38_032.jpg	1.0
+520	vault	v	False	8_2017-07-24_05-18-38_033.jpg	1.0
+521	vault	v	False	8_2017-07-24_05-18-38_034.jpg	1.0
+522	vault	v	False	8_2017-07-24_05-18-38_035.jpg	1.0
+523	vault	v	False	8_2017-07-24_05-18-38_036.jpg	1.0
+524	vault	v	False	8_2017-07-24_05-18-38_037.jpg	1.0
+525	vault	v	False	8_2017-07-24_05-18-38_038.jpg	1.0
+526	vault	v	False	8_2017-07-24_05-18-38_039.jpg	1.0
+527	vault	v	False	8_2017-07-24_05-18-38_040.jpg	1.0
+528	vault	v	False	8_2017-07-24_05-18-38_041.jpg	1.0
+529	vault	v	False	8_2017-07-24_05-18-38_042.jpg	1.0
+530	vault	v	False	8_2017-07-24_05-18-38_043.jpg	1.0
+531	vault	v	False	8_2017-07-24_05-18-38_044.jpg	1.0
+532	vault	v	False	8_2017-07-24_05-18-38_045.jpg	1.0
+533	vault	v	False	8_2017-07-24_05-18-38_046.jpg	1.0
+534	vault	v	False	8_2017-07-24_05-18-38_047.jpg	1.0
+535	vault	v	False	8_2017-07-24_05-18-38_048.jpg	1.0
+536	vault	v	False	8_2017-07-24_05-18-38_049.jpg	1.0
+537	vault	v	False	8_2017-07-24_05-18-38_050.jpg	1.0
+538	vault	v	False	8_2017-07-24_05-18-38_051.jpg	1.0
+539	vault	v	False	8_2017-07-24_05-18-38_052.jpg	1.0
+540	vault	v	False	8_2017-07-24_05-18-38_053.jpg	1.0
+541	vault	v	False	8_2017-07-24_05-18-38_054.jpg	1.0
+542	vault	v	False	8_2017-07-24_05-18-38_055.jpg	1.0
+543	vault	v	False	8_2017-07-24_05-18-38_056.jpg	1.0
+544	vault	v	False	8_2017-07-24_05-18-38_057.jpg	1.0
+545	vault	v	False	8_2017-07-24_05-18-38_058.jpg	1.0
+546	vault	v	False	8_2017-07-24_05-18-38_059.jpg	1.0
+547	vault	v	False	8_2017-07-24_05-18-38_060.jpg	1.0
+548	vault	v	False	8_2017-07-24_05-18-38_061.jpg	1.0
+549	vault	v	False	8_2017-07-24_05-18-38_062.jpg	1.0
+550	vault	v	False	8_2017-07-24_05-18-38_063.jpg	1.0
+551	vault	v	False	8_2017-07-24_05-18-38_064.jpg	1.0
+552	vault	v	False	8_2017-07-24_05-18-38_065.jpg	1.0
+553	vault	v	False	8_2017-07-24_05-18-38_066.jpg	1.0
+554	vault	v	False	8_2017-07-24_05-18-38_067.jpg	1.0
+555	vault	v	False	8_2017-07-24_05-18-38_068.jpg	1.0
+556	vault	v	False	8_2017-07-24_05-18-38_069.jpg	1.0
+557	vault	v	False	8_2017-07-24_05-18-38_070.jpg	1.0
+558	vault	v	False	8_2017-07-24_05-18-38_071.jpg	1.0
+559	vault	v	False	8_2017-07-24_05-18-38_072.jpg	1.0
+560	vault	v	False	8_2017-07-24_05-18-38_073.jpg	1.0
+561	vault	v	False	8_2017-07-24_05-18-38_074.jpg	1.0
+562	cougar, puma, catamount, mountain lion, painter, panther, Felis concolor	b	False	8_2017-07-24_07-53-44_000.jpg	0.0
+563	Siamese cat, Siamese	b	False	8_2017-07-24_07-53-44_001.jpg	1.0
+564	Siamese cat, Siamese	b	False	8_2017-07-24_07-53-44_002.jpg	1.0
+565	Siamese cat, Siamese	b	False	8_2017-07-24_07-53-44_003.jpg	1.0
+566	Siamese cat, Siamese	b	False	8_2017-07-24_07-53-44_004.jpg	1.0
+567	Siamese cat, Siamese	b	False	8_2017-07-24_07-53-44_005.jpg	1.0
+568	Siamese cat, Siamese	b	False	8_2017-07-24_07-53-44_006.jpg	1.0
+569	Siamese cat, Siamese	b	False	8_2017-07-24_07-53-44_007.jpg	1.0
+570	Siamese cat, Siamese	b	False	8_2017-07-24_08-12-27_000.jpg	1.0
+571	Siamese cat, Siamese	b	False	8_2017-07-24_08-12-27_001.jpg	1.0
+572	Siamese cat, Siamese	b	False	8_2017-07-24_08-12-27_002.jpg	1.0
+573	Siamese cat, Siamese	b	False	8_2017-07-24_08-12-27_003.jpg	1.0
+574	Siamese cat, Siamese	b	False	8_2017-07-24_08-12-27_004.jpg	1.0
+575	Siamese cat, Siamese	b	False	8_2017-07-24_08-12-27_005.jpg	1.0
+576	Siamese cat, Siamese	b	False	8_2017-07-24_08-12-27_006.jpg	1.0
+577	Siamese cat, Siamese	b	False	8_2017-07-24_08-12-27_007.jpg	1.0
+578	Siamese cat, Siamese	b	False	8_2017-07-24_10-02-47_000.jpg	1.0
+579	Siamese cat, Siamese	b	False	8_2017-07-24_10-02-47_001.jpg	1.0
+580	Siamese cat, Siamese	b	False	8_2017-07-24_10-02-47_002.jpg	1.0
+581	Siamese cat, Siamese	b	False	8_2017-07-24_10-02-47_003.jpg	1.0
+582	Siamese cat, Siamese	b	False	8_2017-07-24_10-02-47_004.jpg	1.0
+583	Siamese cat, Siamese	b	False	8_2017-07-24_10-02-47_005.jpg	1.0
+584	Siamese cat, Siamese	b	False	8_2017-07-24_10-02-47_006.jpg	1.0
+585	Siamese cat, Siamese	b	False	8_2017-07-24_10-02-47_007.jpg	1.0
+586	kelpie	o	False	8_2017-07-24_12-19-54_000.jpg	1.0
+587	Egyptian cat	o	False	8_2017-07-24_12-19-54_001.jpg	1.0
+588	water buffalo, water ox, Asiatic buffalo, Bubalus bubalis	o	False	8_2017-07-24_12-19-54_002.jpg	1.0
+589	Staffordshire bullterrier, Staffordshire bull terrier	o	False	8_2017-07-24_12-19-54_003.jpg	1.0
+590	kelpie	o	False	8_2017-07-24_12-19-54_004.jpg	1.0
+591	Boston bull, Boston terrier	o	False	8_2017-07-24_12-19-54_005.jpg	1.0
+592	kelpie	o	False	8_2017-07-24_12-19-54_006.jpg	1.0
+593	groenendael	o	False	8_2017-07-24_12-19-54_007.jpg	1.0
+594	Egyptian cat	o	False	8_2017-07-24_12-19-54_008.jpg	1.0
+595	schipperke	o	False	8_2017-07-24_12-19-54_009.jpg	1.0
+596	Egyptian cat	o	False	8_2017-07-24_12-19-54_010.jpg	1.0
+597	schipperke	o	False	8_2017-07-24_12-19-54_011.jpg	1.0
+598	Egyptian cat	v	False	8_2017-07-24_17-00-51_000.jpg	1.0
+599	flat-coated retriever	v	False	8_2017-07-24_17-00-51_001.jpg	1.0
+600	curly-coated retriever	v	False	8_2017-07-24_17-00-51_002.jpg	1.0
+601	schipperke	v	False	8_2017-07-24_17-00-51_003.jpg	1.0
+602	curly-coated retriever	v	False	8_2017-07-24_17-00-51_004.jpg	1.0
+603	groenendael	v	False	8_2017-07-24_17-00-51_005.jpg	1.0
+604	schipperke	v	False	8_2017-07-24_17-00-51_006.jpg	1.0
+605	flat-coated retriever	v	False	8_2017-07-24_17-00-51_007.jpg	1.0
+606	flat-coated retriever	v	False	8_2017-07-24_17-00-51_008.jpg	1.0
+607	flat-coated retriever	v	False	8_2017-07-24_17-00-51_009.jpg	1.0
+608	schipperke	v	False	8_2017-07-24_19-33-13_000.jpg	1.0
+609	schipperke	v	False	8_2017-07-24_19-33-13_001.jpg	1.0
+610	giant schnauzer	v	False	8_2017-07-24_19-33-13_002.jpg	1.0
+611	giant schnauzer	v	False	8_2017-07-24_19-33-13_003.jpg	1.0
+612	flat-coated retriever	v	False	8_2017-07-24_19-33-13_004.jpg	1.0
+613	kelpie	v	False	8_2017-07-24_19-33-13_005.jpg	1.0
+614	flat-coated retriever	v	False	8_2017-07-24_19-33-13_006.jpg	1.0
+615	kelpie	v	False	8_2017-07-24_19-46-40_000.jpg	1.0
+616	kelpie	v	False	8_2017-07-24_19-46-40_001.jpg	1.0
+617	flat-coated retriever	v	False	8_2017-07-24_19-46-40_002.jpg	1.0
+618	kelpie	v	False	8_2017-07-24_19-46-40_003.jpg	1.0
+619	kelpie	v	False	8_2017-07-24_19-46-40_004.jpg	1.0
+620	curly-coated retriever	v	False	8_2017-07-24_19-46-40_005.jpg	1.0
+621	kelpie	v	False	8_2017-07-24_19-46-40_006.jpg	1.0
+622	curly-coated retriever	v	False	8_2017-07-24_19-46-40_007.jpg	1.0
+623	flat-coated retriever	v	False	8_2017-07-24_19-46-40_008.jpg	1.0
+624	flat-coated retriever	v	False	8_2017-07-24_19-46-40_009.jpg	1.0
+625	flat-coated retriever	v	False	8_2017-07-24_19-46-40_010.jpg	1.0
+626	groenendael	v	False	8_2017-07-24_19-46-40_011.jpg	1.0
+627	curly-coated retriever	v	False	8_2017-07-24_19-46-40_012.jpg	1.0
+628	Siamese cat, Siamese	b	False	8_2017-07-24_20-51-27_000.jpg	1.0
+629	Siamese cat, Siamese	b	False	8_2017-07-24_20-51-27_001.jpg	1.0
+630	Siamese cat, Siamese	b	False	8_2017-07-24_20-51-27_002.jpg	1.0
+631	Siamese cat, Siamese	b	False	8_2017-07-24_20-51-27_003.jpg	1.0
+632	Siamese cat, Siamese	b	False	8_2017-07-24_20-51-27_004.jpg	1.0
+633	Siamese cat, Siamese	b	False	8_2017-07-24_20-51-27_005.jpg	1.0
+634	Siamese cat, Siamese	b	False	8_2017-07-24_20-51-27_006.jpg	1.0
+635	Siamese cat, Siamese	b	False	8_2017-07-24_20-51-27_007.jpg	1.0
+636	Siamese cat, Siamese	b	False	8_2017-07-24_20-51-27_008.jpg	1.0
+637	Siamese cat, Siamese	b	False	8_2017-07-24_20-51-27_009.jpg	1.0
+638	Siamese cat, Siamese	b	False	8_2017-07-24_20-51-27_010.jpg	1.0
+639	Chesapeake Bay retriever	b	False	8_2017-07-25_05-45-29_000.jpg	0.0
+640	Siamese cat, Siamese	b	False	8_2017-07-25_05-45-29_001.jpg	1.0
+641	Siamese cat, Siamese	b	False	8_2017-07-25_05-45-29_002.jpg	1.0
+642	Siamese cat, Siamese	b	False	8_2017-07-25_05-45-29_003.jpg	1.0
+643	Siamese cat, Siamese	b	False	8_2017-07-25_05-45-29_004.jpg	1.0
+644	Siamese cat, Siamese	b	False	8_2017-07-25_05-45-29_005.jpg	1.0
+645	Siamese cat, Siamese	b	False	8_2017-07-25_07-44-03_000.jpg	1.0
+646	Siamese cat, Siamese	b	False	8_2017-07-25_07-44-03_001.jpg	1.0
+647	Siamese cat, Siamese	b	False	8_2017-07-25_07-44-03_002.jpg	1.0
+648	Siamese cat, Siamese	b	False	8_2017-07-25_07-44-03_003.jpg	1.0
+649	Siamese cat, Siamese	b	False	8_2017-07-25_07-44-03_004.jpg	1.0
+650	Siamese cat, Siamese	b	False	8_2017-07-25_07-44-03_005.jpg	1.0
+651	Siamese cat, Siamese	b	False	8_2017-07-25_07-44-03_006.jpg	1.0
+652	Siamese cat, Siamese	b	False	8_2017-07-25_07-44-03_007.jpg	1.0
+653	Siamese cat, Siamese	b	False	8_2017-07-25_07-44-03_008.jpg	1.0
+654	Siamese cat, Siamese	b	False	8_2017-07-25_07-44-03_009.jpg	1.0
+655	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_000.jpg	1.0
+656	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_001.jpg	1.0
+657	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_002.jpg	1.0
+658	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_003.jpg	1.0
+659	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_004.jpg	1.0
+660	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_005.jpg	1.0
+661	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_006.jpg	1.0
+662	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_007.jpg	1.0
+663	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_008.jpg	1.0
+664	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_009.jpg	1.0
+665	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_010.jpg	1.0
+666	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_011.jpg	1.0
+667	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_012.jpg	1.0
+668	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_013.jpg	1.0
+669	ox	b	False	8_2017-07-25_08-14-56_014.jpg	0.0
+670	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_015.jpg	1.0
+671	Siamese cat, Siamese	b	False	8_2017-07-25_08-14-56_016.jpg	1.0
+672	Siamese cat, Siamese	b	False	8_2017-07-25_08-16-37_000.jpg	1.0
+673	Siamese cat, Siamese	b	False	8_2017-07-25_08-16-37_001.jpg	1.0
+674	Siamese cat, Siamese	b	False	8_2017-07-25_08-16-37_002.jpg	1.0
+675	Siamese cat, Siamese	b	False	8_2017-07-25_08-16-37_003.jpg	1.0
+676	Siamese cat, Siamese	b	False	8_2017-07-25_08-16-37_004.jpg	1.0
+677	Siamese cat, Siamese	b	False	8_2017-07-25_09-29-05_000.jpg	1.0
+678	Siamese cat, Siamese	b	False	8_2017-07-25_09-29-05_001.jpg	1.0
+679	Siamese cat, Siamese	b	False	8_2017-07-25_09-29-05_002.jpg	1.0
+680	Siamese cat, Siamese	b	False	8_2017-07-25_09-29-05_003.jpg	1.0
+681	Siamese cat, Siamese	b	False	8_2017-07-25_09-29-05_004.jpg	1.0
+682	Siamese cat, Siamese	b	False	8_2017-07-25_09-29-05_005.jpg	1.0
+683	Siamese cat, Siamese	b	False	8_2017-07-25_09-29-05_006.jpg	1.0
+684	Egyptian cat	o	False	8_2017-07-25_14-12-44_000.jpg	1.0
+685	Egyptian cat	o	False	8_2017-07-25_14-12-44_001.jpg	1.0
+686	Boston bull, Boston terrier	o	False	8_2017-07-25_14-12-44_002.jpg	1.0
+687	Border collie	o	False	8_2017-07-25_14-12-44_003.jpg	1.0
+688	Egyptian cat	o	False	8_2017-07-25_14-12-44_004.jpg	1.0
+689	schipperke	o	False	8_2017-07-25_14-12-44_005.jpg	1.0
+690	schipperke	o	False	8_2017-07-25_14-12-44_006.jpg	1.0
+691	schipperke	o	False	8_2017-07-25_14-12-44_007.jpg	1.0
+692	schipperke	o	False	8_2017-07-25_14-12-44_008.jpg	1.0
+693	schipperke	v	False	8_2017-07-25_17-53-47_000.jpg	1.0
+694	kelpie	v	False	8_2017-07-25_17-53-47_001.jpg	1.0
+695	kelpie	v	False	8_2017-07-25_17-53-47_002.jpg	1.0
+696	kelpie	v	False	8_2017-07-25_17-53-47_003.jpg	1.0
+697	flat-coated retriever	v	False	8_2017-07-25_17-53-47_004.jpg	1.0
+698	schipperke	v	False	8_2017-07-25_17-53-47_005.jpg	1.0
+699	Egyptian cat	v	False	8_2017-07-25_17-53-47_006.jpg	1.0
+700	schipperke	v	False	8_2017-07-25_17-53-47_007.jpg	1.0
+701	schipperke	v	False	8_2017-07-25_17-53-47_008.jpg	1.0
+702	flat-coated retriever	v	False	8_2017-07-25_17-53-47_009.jpg	1.0
+703	schipperke	v	False	8_2017-07-25_17-53-47_010.jpg	1.0
+704	flat-coated retriever	v	False	8_2017-07-25_17-53-47_011.jpg	1.0
+705	Siamese cat, Siamese	b	False	8_2017-07-25_18-52-48_000.jpg	1.0
+706	Siamese cat, Siamese	b	False	8_2017-07-25_18-52-48_001.jpg	1.0
+707	Siamese cat, Siamese	b	False	8_2017-07-25_18-52-48_002.jpg	1.0
+708	Siamese cat, Siamese	b	False	8_2017-07-25_18-52-48_003.jpg	1.0
+709	Siamese cat, Siamese	b	False	8_2017-07-25_18-52-48_004.jpg	1.0
+710	Siamese cat, Siamese	b	False	8_2017-07-25_18-52-48_005.jpg	1.0
+711	kelpie	b	False	8_2017-07-25_18-52-48_006.jpg	0.0
+712	Siamese cat, Siamese	b	False	8_2017-07-25_18-52-48_007.jpg	1.0
+713	Siamese cat, Siamese	b	False	8_2017-07-25_18-52-48_008.jpg	1.0
+714	Siamese cat, Siamese	b	False	8_2017-07-25_18-52-48_009.jpg	1.0
+715	Siamese cat, Siamese	b	False	8_2017-07-25_20-17-10_000.jpg	1.0
+716	Siamese cat, Siamese	b	False	8_2017-07-25_20-17-10_001.jpg	1.0
+717	Siamese cat, Siamese	b	False	8_2017-07-25_20-17-10_002.jpg	1.0
+718	Siamese cat, Siamese	b	False	8_2017-07-25_20-17-10_003.jpg	1.0
+719	Siamese cat, Siamese	b	False	8_2017-07-25_20-17-10_004.jpg	1.0
+720	Siamese cat, Siamese	b	False	8_2017-07-25_20-17-10_005.jpg	1.0
+721	Siamese cat, Siamese	b	False	8_2017-07-25_20-17-10_006.jpg	1.0
+722	Siamese cat, Siamese	b	False	8_2017-07-25_20-17-10_007.jpg	1.0
+723	Siamese cat, Siamese	b	False	8_2017-07-25_20-17-10_008.jpg	1.0
+724	Siamese cat, Siamese	b	False	8_2017-07-26_03-00-00_000.jpg	1.0
+725	Siamese cat, Siamese	b	False	8_2017-07-26_03-00-00_001.jpg	1.0
+726	Siamese cat, Siamese	b	False	8_2017-07-26_03-00-00_002.jpg	1.0
+727	Siamese cat, Siamese	b	False	8_2017-07-26_03-00-00_003.jpg	1.0
+728	Siamese cat, Siamese	b	False	8_2017-07-26_03-00-00_004.jpg	1.0
+729	Siamese cat, Siamese	b	False	8_2017-07-26_03-00-00_005.jpg	1.0
+730	oxcart	b	False	8_2017-07-26_03-00-00_006.jpg	0.0
+731	Siamese cat, Siamese	b	False	8_2017-07-26_03-00-00_007.jpg	1.0
+732	Siamese cat, Siamese	b	False	8_2017-07-26_03-00-00_008.jpg	1.0
+733	ibex, Capra ibex	b	False	8_2017-07-26_03-00-00_009.jpg	0.0
+734	Siamese cat, Siamese	b	False	8_2017-07-26_03-00-00_010.jpg	1.0
+735	Siamese cat, Siamese	b	False	8_2017-07-26_03-00-00_011.jpg	1.0
+736	Siamese cat, Siamese	b	False	8_2017-07-26_03-00-00_012.jpg	1.0
+737	Siamese cat, Siamese	b	False	8_2017-07-26_03-00-00_013.jpg	1.0
+738	ox	b	False	8_2017-07-26_03-00-00_014.jpg	0.0
+739	Siamese cat, Siamese	b	False	8_2017-07-26_03-00-00_015.jpg	1.0
+740	Italian greyhound	b	False	8_2017-07-26_03-00-00_016.jpg	0.0
+741	Italian greyhound	b	False	8_2017-07-26_03-00-00_017.jpg	0.0
+742	Siamese cat, Siamese	b	False	8_2017-07-26_03-34-41_000.jpg	1.0
+743	ox	b	False	8_2017-07-26_03-34-41_001.jpg	0.0
+744	Siamese cat, Siamese	b	False	8_2017-07-26_03-34-41_002.jpg	1.0
+745	Siamese cat, Siamese	b	False	8_2017-07-26_03-34-41_003.jpg	1.0
+746	Mexican hairless	b	False	8_2017-07-26_05-17-54_000.jpg	0.0
+747	Siamese cat, Siamese	b	False	8_2017-07-26_05-17-54_001.jpg	1.0
+748	Egyptian cat	b	False	8_2017-07-26_05-17-54_002.jpg	0.0
+749	Siamese cat, Siamese	b	False	8_2017-07-26_05-17-54_003.jpg	1.0
+750	Siamese cat, Siamese	b	False	8_2017-07-26_05-17-54_004.jpg	1.0
+751	Siamese cat, Siamese	b	False	8_2017-07-26_05-17-54_005.jpg	1.0
+752	Siamese cat, Siamese	b	False	8_2017-07-26_05-17-54_006.jpg	1.0
+753	Siamese cat, Siamese	b	False	8_2017-07-26_05-17-54_007.jpg	1.0
+754	Siamese cat, Siamese	b	False	8_2017-07-26_05-17-54_008.jpg	1.0
+755	Siamese cat, Siamese	b	False	8_2017-07-26_05-17-54_009.jpg	1.0
+756	Siamese cat, Siamese	b	False	8_2017-07-26_05-17-54_010.jpg	1.0
+757	Siamese cat, Siamese	b	False	8_2017-07-26_05-17-54_011.jpg	1.0
+758	Siamese cat, Siamese	b	False	8_2017-07-26_05-17-54_012.jpg	1.0
+759	Siamese cat, Siamese	b	False	8_2017-07-26_05-17-54_013.jpg	1.0
+760	Siamese cat, Siamese	b	False	8_2017-07-26_05-17-54_014.jpg	1.0
+761	hog, pig, grunter, squealer, Sus scrofa	b	False	8_2017-07-26_08-48-37_000.jpg	0.0
+762	hog, pig, grunter, squealer, Sus scrofa	b	False	8_2017-07-26_08-48-37_001.jpg	0.0
+763	Siamese cat, Siamese	b	False	8_2017-07-26_08-48-37_002.jpg	1.0
+764	American black bear, black bear, Ursus americanus, Euarctos americanus	v	False	8_2017-07-26_11-40-22_000.jpg	1.0
+765	Egyptian cat	v	False	8_2017-07-26_11-40-22_001.jpg	1.0
+766	schipperke	v	False	8_2017-07-26_11-40-22_002.jpg	1.0
+767	schipperke	v	False	8_2017-07-26_11-40-22_003.jpg	1.0
+768	schipperke	v	False	8_2017-07-26_11-40-22_004.jpg	1.0
+769	schipperke	v	False	8_2017-07-26_11-40-22_005.jpg	1.0
+770	schipperke	v	False	8_2017-07-26_11-40-22_006.jpg	1.0
+771	Egyptian cat	v	False	8_2017-07-26_12-51-07_000.jpg	1.0
+772	schipperke	v	False	8_2017-07-26_12-51-07_001.jpg	1.0
+773	kelpie	v	False	8_2017-07-26_12-51-07_002.jpg	1.0
+774	schipperke	v	False	8_2017-07-26_12-51-07_003.jpg	1.0
+775	Egyptian cat	v	False	8_2017-07-26_12-51-07_004.jpg	1.0
+776	schipperke	v	False	8_2017-07-26_12-51-07_005.jpg	1.0
+777	schipperke	v	False	8_2017-07-26_12-51-07_006.jpg	1.0
+778	schipperke	v	False	8_2017-07-26_12-51-07_007.jpg	1.0
+779	schipperke	v	False	8_2017-07-26_12-51-07_008.jpg	1.0
+780	Egyptian cat	v	False	8_2017-07-26_12-51-07_009.jpg	1.0
+781	schipperke	v	False	8_2017-07-26_12-51-07_010.jpg	1.0
+782	schipperke	v	False	8_2017-07-26_12-51-07_011.jpg	1.0
+783	kelpie	v	False	8_2017-07-26_12-58-23_000.jpg	1.0
+784	kelpie	v	False	8_2017-07-26_12-58-23_001.jpg	1.0
+785	Egyptian cat	v	False	8_2017-07-26_12-58-23_002.jpg	1.0
+786	groenendael	v	False	8_2017-07-26_12-58-23_003.jpg	1.0
+787	flat-coated retriever	v	False	8_2017-07-26_12-58-23_004.jpg	1.0
+788	groenendael	v	False	8_2017-07-26_12-58-23_005.jpg	1.0
+789	groenendael	v	False	8_2017-07-26_12-58-23_006.jpg	1.0
+790	groenendael	v	False	8_2017-07-26_12-58-23_007.jpg	1.0
+791	curly-coated retriever	v	False	8_2017-07-26_12-58-23_008.jpg	1.0
+792	flat-coated retriever	v	False	8_2017-07-26_12-58-23_009.jpg	1.0
+793	flat-coated retriever	v	False	8_2017-07-26_12-58-23_010.jpg	1.0
+794	curly-coated retriever	v	False	8_2017-07-26_12-58-23_011.jpg	1.0
+795	flat-coated retriever	v	False	8_2017-07-26_12-58-23_012.jpg	1.0
+796	schipperke	v	False	8_2017-07-26_12-58-23_013.jpg	1.0
+797	Labrador retriever	v	False	8_2017-07-26_13-27-08_000.jpg	1.0
+798	Egyptian cat	v	False	8_2017-07-26_13-27-08_001.jpg	1.0
+799	schipperke	v	False	8_2017-07-26_13-27-08_002.jpg	1.0
+800	schipperke	v	False	8_2017-07-26_13-27-08_003.jpg	1.0
+801	schipperke	v	False	8_2017-07-26_13-27-08_004.jpg	1.0
+802	schipperke	v	False	8_2017-07-26_13-27-08_005.jpg	1.0
+803	Egyptian cat	v	False	8_2017-07-26_13-27-08_006.jpg	1.0
+804	schipperke	v	False	8_2017-07-26_13-27-08_007.jpg	1.0
+805	Egyptian cat	v	False	8_2017-07-26_13-27-08_008.jpg	1.0
+806	schipperke	v	False	8_2017-07-26_13-27-08_009.jpg	1.0
+807	Egyptian cat	v	False	8_2017-07-26_13-27-08_010.jpg	1.0
+808	doormat, welcome mat	v	False	8_2017-07-26_13-27-08_011.jpg	1.0
+809	Egyptian cat	v	False	8_2017-07-26_13-27-08_012.jpg	1.0
+810	schipperke	v	False	8_2017-07-26_13-27-08_013.jpg	1.0
+811	flat-coated retriever	v	False	8_2017-07-26_13-27-08_014.jpg	1.0
+812	flat-coated retriever	v	False	8_2017-07-26_13-27-08_015.jpg	1.0
+813	flat-coated retriever	o	False	8_2017-07-26_15-00-57_000.jpg	1.0
+814	groenendael	o	False	8_2017-07-26_15-00-57_001.jpg	1.0
+815	kelpie	o	False	8_2017-07-26_15-00-57_002.jpg	1.0
+816	kelpie	o	False	8_2017-07-26_15-00-57_003.jpg	1.0
+817	schipperke	o	False	8_2017-07-26_15-00-57_004.jpg	1.0
+818	kelpie	o	False	8_2017-07-26_15-00-57_005.jpg	1.0
+819	kelpie	o	False	8_2017-07-26_15-00-57_006.jpg	1.0
+820	schipperke	o	False	8_2017-07-26_15-00-57_007.jpg	1.0
+821	schipperke	o	False	8_2017-07-26_15-00-57_008.jpg	1.0
+822	schipperke	o	False	8_2017-07-26_15-00-57_009.jpg	1.0
+823	schipperke	o	False	8_2017-07-26_15-00-57_010.jpg	1.0
+824	schipperke	o	False	8_2017-07-26_15-00-57_011.jpg	1.0
+825	groenendael	o	False	8_2017-07-26_15-00-57_012.jpg	1.0
+826	giant schnauzer	o	False	8_2017-07-26_15-00-57_013.jpg	1.0
+827	Siamese cat, Siamese	b	False	8_2017-07-26_16-14-38_000.jpg	1.0
+828	Siamese cat, Siamese	b	False	8_2017-07-26_16-14-38_001.jpg	1.0
+829	Siamese cat, Siamese	b	False	8_2017-07-26_16-14-38_002.jpg	1.0
+830	Siamese cat, Siamese	b	False	8_2017-07-26_16-14-38_003.jpg	1.0
+831	Siamese cat, Siamese	b	False	8_2017-07-26_16-14-38_004.jpg	1.0
+832	Siamese cat, Siamese	b	False	8_2017-07-26_16-14-38_005.jpg	1.0
+833	Siamese cat, Siamese	b	False	8_2017-07-26_16-14-38_006.jpg	1.0
+834	Egyptian cat	b	False	8_2017-07-26_16-14-38_007.jpg	0.0
+835	Siamese cat, Siamese	b	False	8_2017-07-26_16-14-38_008.jpg	1.0
+836	Labrador retriever	b	False	8_2017-07-26_16-14-38_009.jpg	0.0
+837	Siamese cat, Siamese	b	False	8_2017-07-26_18-45-31_000.jpg	1.0
+838	Siamese cat, Siamese	b	False	8_2017-07-26_18-45-31_001.jpg	1.0
+839	Siamese cat, Siamese	b	False	8_2017-07-26_18-45-31_002.jpg	1.0
+840	Siamese cat, Siamese	b	False	8_2017-07-26_18-45-31_003.jpg	1.0
+841	Siamese cat, Siamese	b	False	8_2017-07-26_18-45-31_004.jpg	1.0
+842	Siamese cat, Siamese	b	False	8_2017-07-26_18-45-31_005.jpg	1.0
+843	Siamese cat, Siamese	b	False	8_2017-07-26_18-45-31_006.jpg	1.0
+844	Siamese cat, Siamese	b	False	8_2017-07-26_18-45-31_007.jpg	1.0
+845	Siamese cat, Siamese	b	False	8_2017-07-26_18-45-31_008.jpg	1.0
+846	Siamese cat, Siamese	b	False	8_2017-07-26_18-45-31_009.jpg	1.0
+847	Siamese cat, Siamese	b	False	8_2017-07-26_19-34-48_000.jpg	1.0
+848	kelpie	b	False	8_2017-07-26_19-34-48_001.jpg	0.0
+849	Siamese cat, Siamese	b	False	8_2017-07-26_19-34-48_002.jpg	1.0
+850	Siamese cat, Siamese	b	False	8_2017-07-26_19-34-48_003.jpg	1.0
+851	Siamese cat, Siamese	b	False	8_2017-07-26_19-34-48_004.jpg	1.0
+852	Siamese cat, Siamese	b	False	8_2017-07-26_19-34-48_005.jpg	1.0
+853	Siamese cat, Siamese	b	False	8_2017-07-26_19-34-48_006.jpg	1.0
+854	Siamese cat, Siamese	b	False	8_2017-07-26_19-34-48_007.jpg	1.0
+855	Siamese cat, Siamese	b	False	8_2017-07-26_19-34-48_008.jpg	1.0
+856	Siamese cat, Siamese	b	False	8_2017-07-26_19-34-48_009.jpg	1.0
+857	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_000.jpg	1.0
+858	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_001.jpg	1.0
+859	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_002.jpg	1.0
+860	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_003.jpg	1.0
+861	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_004.jpg	1.0
+862	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_005.jpg	1.0
+863	schipperke	b	False	8_2017-07-26_19-43-59_006.jpg	0.0
+864	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_007.jpg	1.0
+865	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_008.jpg	1.0
+866	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_009.jpg	1.0
+867	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_010.jpg	1.0
+868	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_011.jpg	1.0
+869	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_012.jpg	1.0
+870	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_013.jpg	1.0
+871	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_014.jpg	1.0
+872	Siamese cat, Siamese	b	False	8_2017-07-26_19-43-59_015.jpg	1.0
+873	schipperke	v	False	8_2017-07-27_06-29-42_000.jpg	1.0
+874	schipperke	v	False	8_2017-07-27_06-29-42_001.jpg	1.0
+875	schipperke	v	False	8_2017-07-27_06-29-42_002.jpg	1.0
+876	schipperke	v	False	8_2017-07-27_06-29-42_003.jpg	1.0
+877	schipperke	v	False	8_2017-07-27_06-29-42_004.jpg	1.0
+878	schipperke	v	False	8_2017-07-27_06-29-42_005.jpg	1.0
+879	schipperke	v	False	8_2017-07-27_06-29-42_006.jpg	1.0
+880	schipperke	v	False	8_2017-07-27_06-29-42_007.jpg	1.0
+881	schipperke	v	False	8_2017-07-27_06-29-42_008.jpg	1.0
+882	Egyptian cat	v	False	8_2017-07-27_06-29-42_009.jpg	1.0
+883	schipperke	v	False	8_2017-07-27_06-29-42_010.jpg	1.0
+884	schipperke	v	False	8_2017-07-27_06-29-42_011.jpg	1.0
+885	flat-coated retriever	v	False	8_2017-07-27_06-38-33_000.jpg	1.0
+886	flat-coated retriever	v	False	8_2017-07-27_06-38-33_001.jpg	1.0
+887	flat-coated retriever	v	False	8_2017-07-27_06-38-33_002.jpg	1.0
+888	flat-coated retriever	v	False	8_2017-07-27_06-38-33_003.jpg	1.0
+889	groenendael	v	False	8_2017-07-27_06-38-33_004.jpg	1.0
+890	groenendael	v	False	8_2017-07-27_06-38-33_005.jpg	1.0
+891	curly-coated retriever	v	False	8_2017-07-27_06-38-33_006.jpg	1.0
+892	flat-coated retriever	v	False	8_2017-07-27_06-38-33_007.jpg	1.0
+893	groenendael	v	False	8_2017-07-27_06-38-33_008.jpg	1.0
+894	flat-coated retriever	v	False	8_2017-07-27_06-38-33_009.jpg	1.0
+895	flat-coated retriever	v	False	8_2017-07-27_06-38-33_010.jpg	1.0
+896	flat-coated retriever	v	False	8_2017-07-27_06-38-33_011.jpg	1.0
+897	flat-coated retriever	v	False	8_2017-07-27_06-38-33_012.jpg	1.0
+898	schipperke	v	False	8_2017-07-27_06-38-33_013.jpg	1.0
+899	schipperke	v	False	8_2017-07-27_06-38-33_014.jpg	1.0
+900	groenendael	v	False	8_2017-07-27_06-38-33_015.jpg	1.0
+901	schipperke	v	False	8_2017-07-27_06-38-33_016.jpg	1.0
+902	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_000.jpg	1.0
+903	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_001.jpg	1.0
+904	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_002.jpg	1.0
+905	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_003.jpg	1.0
+906	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_004.jpg	1.0
+907	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_005.jpg	1.0
+908	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_006.jpg	1.0
+909	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_007.jpg	1.0
+910	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_008.jpg	1.0
+911	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_009.jpg	1.0
+912	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_010.jpg	1.0
+913	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_011.jpg	1.0
+914	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_012.jpg	1.0
+915	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_013.jpg	1.0
+916	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_014.jpg	1.0
+917	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_015.jpg	1.0
+918	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_016.jpg	1.0
+919	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_017.jpg	1.0
+920	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_018.jpg	1.0
+921	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_019.jpg	1.0
+922	oxcart	b	False	8_2017-07-27_09-07-12_020.jpg	0.0
+923	Siamese cat, Siamese	b	False	8_2017-07-27_09-07-12_021.jpg	1.0

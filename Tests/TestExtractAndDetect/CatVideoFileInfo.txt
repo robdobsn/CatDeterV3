@@ -1,0 +1,22 @@
+8_2017-04-20_16-27-43   Olly    Side    Day
+8_2017-04-20_17-58-09   Olly    Side    Day 2   3
+8_2017-04-20_17-58-09   BW    Side    Day 6   10
+8_2017-04-24_10-38-13   Daisy   Side    Day 2   4
+8_2017-04-26_08-53-17   Daisy   Side    Day 2   6
+8_2017-04-26_09-57-04   Daisy   Side    Day 2   3
+8_2017-04-26_10-28-12   Daisy   Side    Day 2   3
+8_2017-04-26_12-03-59   Daisy   Side    Day 2   3
+8_2017-05-15_08-40-43   Olly    Side    Day 0   2
+8_2017-05-17_08-45-36   Bad1    Side    Day 2   6
+8_2017-05-17_09-39-37   Daisy   Side    Day 2   3
+8_2017-05-17_09-40-03   Daisy   Side    Day 2   5
+8_2017-05-19_07-50-20   Olly    Side    Day 2   6
+8_2017-05-19_07-51-07   Daisy   Front   Day 1   2
+8_2017-05-19_08-43-29   Bad2    Front   Day 1   2
+8_2017-05-19_08-43-29   Bad2    Side   Day 2   5
+8_2017-05-19_08-43-53   Bad2    Side    Day 2   3
+8_2017-07-17_09-45-19   Olly    Side    Day 0   1
+8_2017-07-17_10-12-12   Daisy   Side    Day 1   4
+8_2017-07-19_06-00-49   Bad1    Side    Day 2   4
+
+

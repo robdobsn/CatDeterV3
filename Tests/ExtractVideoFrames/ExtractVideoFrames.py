@@ -186,7 +186,7 @@ videoSourceStr = config["videoSourceStr"]
 destImageFolder = config["destFolder"]
 frameDetectType = config["frameDetectType"]
 frameDetectLen = config["frameDetectLen"]
-showDebugImages = False
+showDebugImages = True
 
 # Create the empty record for the image file dataset
 imageFileData = pandas.DataFrame({"filename":[],"cat":[]})
@@ -205,8 +205,8 @@ with VideoSource(videoSourceType, videoSourceStr, frameDetectType, frameDetectLe
         if maxBounds is None:
             continue
         # Save out as an image if required
-        if destImageFolder != "":
-            imgFileName = videoSource.saveAsJpeg(destImageFolder, fileName, fileIdx, frameIdx, motionDetectFrame, maxBounds)
+        # if destImageFolder != "":
+        #     imgFileName = videoSource.saveAsJpeg(destImageFolder, fileName, fileIdx, frameIdx, motionDetectFrame, maxBounds)
 
         # Add to output records
         # cdf = pandas.DataFrame({"filename":[imgFileNameOnly],"cat":[cat]})
@@ -225,7 +225,7 @@ with VideoSource(videoSourceType, videoSourceStr, frameDetectType, frameDetectLe
             (x,y,w,h) = maxBounds
             cv2.rectangle(debugFrame, (x, y), (x + w, y + h), (0, 255, 0), 2)
             cv2.imshow('frame', debugFrame)
-            if cv2.waitKey(1000) & 0xFF == ord('q'):
+            if cv2.waitKey(10000) & 0xFF == ord('q'):
                 break
 
 enddatetime = datetime.datetime.now()
