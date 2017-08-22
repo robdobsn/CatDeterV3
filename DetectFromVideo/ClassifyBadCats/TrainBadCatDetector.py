@@ -13,7 +13,7 @@ TRAIN_DIR = 'C:/Users/rob/Dropbox (TheDobsons)/Main/RobDev/Projects/AutomationIo
 IMG_SIZE = 50
 LR = 1e-3
 
-MODEL_NAME = 'catdetectv3-{}-{}.model'.format(LR, '2conv-basic') # just so we remember which saved model is which, sizes must match
+MODEL_NAME = 'catdetectv3a-{}-{}.model'.format(LR, '2conv-basic') # just so we remember which saved model is which, sizes must match
 
 def label_img(img):
     word_label = img.split('_')[0]

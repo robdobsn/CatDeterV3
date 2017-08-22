@@ -1,2 +1,2 @@
-model_checkpoint_path: "C:\\Users\\rob\\Dropbox (TheDobsons)\\Main\\RobDev\\Projects\\AutomationIoT\\DoorCameraAndLocks\\Cat Deterrent\\CatDeterV3\\DetectFromVideo\\ClassifyBadCats\\catdetectv3-0.001-2conv-basic.model"
-all_model_checkpoint_paths: "C:\\Users\\rob\\Dropbox (TheDobsons)\\Main\\RobDev\\Projects\\AutomationIoT\\DoorCameraAndLocks\\Cat Deterrent\\CatDeterV3\\DetectFromVideo\\ClassifyBadCats\\catdetectv3-0.001-2conv-basic.model"
+model_checkpoint_path: "C:\\Users\\rob\\Dropbox (TheDobsons)\\Main\\RobDev\\Projects\\AutomationIoT\\DoorCameraAndLocks\\Cat Deterrent\\CatDeterV3\\DetectFromVideo\\ClassifyBadCats\\catdetectv3a-0.001-2conv-basic.model"
+all_model_checkpoint_paths: "C:\\Users\\rob\\Dropbox (TheDobsons)\\Main\\RobDev\\Projects\\AutomationIoT\\DoorCameraAndLocks\\Cat Deterrent\\CatDeterV3\\DetectFromVideo\\ClassifyBadCats\\catdetectv3a-0.001-2conv-basic.model"

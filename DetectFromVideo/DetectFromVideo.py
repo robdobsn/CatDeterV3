@@ -83,7 +83,6 @@ class ImageRecogniser():
         self.debugTimer = DebugTimer(["ConvertImage", "RecogniseImage","Lookup"])
 
     def create_graph(self):
-        """Creates a graph from saved GraphDef file and returns a saver."""
         # Creates graph from saved graph_def.pb.
         with tf.gfile.FastGFile(os.path.join(
                 self.model_dir, 'classify_image_graph_def.pb'), 'rb') as f:
@@ -114,10 +113,6 @@ class ImageRecogniser():
         node_lookup = NodeLookup(self.model_dir)
 
         top_k = predictions.argsort()[-num_top_predictions:][::-1]
-        # for node_id in top_k:
-        #   human_string = node_lookup.id_to_string(node_id)
-        #   score = predictions[node_id]
-        #   print('%s (score = %.5f)' % (human_string, score))
         node_id = top_k[0]
         human_string = node_lookup.id_to_string(node_id)
         score = predictions[node_id]
@@ -125,11 +120,9 @@ class ImageRecogniser():
         return (human_string, score)
 
 class VideoSource():
-    def __init__(self, videoSourceType, videoSourceStr, motionDetectType, motionDetectNumFrames):
+    def __init__(self, videoSourceType, videoSourceStr):
         self.videoSourceType = videoSourceType
         self.videoSourceStr = videoSourceStr
-        self.motionDetectType = motionDetectType
-        self.motionDetectNumFrames = motionDetectNumFrames
         self.debugTimer = DebugTimer(["IsColoured", "MotionDetect","GetFrame"])
         self.boundsValid = 0
         self.boundsInvalid_NoBounds = 1
@@ -192,20 +185,18 @@ class VideoSource():
                               (imgWidth * detectPcX1Y1X2Y2[2]) // 100,
                               (imgHeight * detectPcX1Y1X2Y2[3]) // 100)
         dilated = cv2.dilate(thresholdedImg, None, iterations=2)
+        # Find contours
         (_, cnts, _) = cv2.findContours(dilated, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         for c in cnts:
             # Only process contours which go close to the image centre
             (x, y, w, h) = cv2.boundingRect(c)
             newRectOutline = (x, y, x + w, y + h)
             (x1, y1, x2, y2) = newRectOutline
-            # print("T1", x1 < ((imgWidth * centringBorder) // 100) or x2 > (imgWidth * (100 - centringBorder)) // 100)
-            # print("T2", y1 < ((imgHeight * centringBorder) // 100) or y2 > (imgHeight * (100 - centringBorder)) // 100)
             if x2 < validLeft  or x1 > validRight or y2 < validTop or y1 > validBottom:
                 continue
             # if the contour is too small, ignore it
             if cv2.contourArea(c) < 300:
                 continue
-
             if boundingOutline is not None:
                 bl = np.min((boundingOutline, newRectOutline),axis=0)
                 tr = np.max((boundingOutline, newRectOutline),axis=0)
@@ -214,7 +205,6 @@ class VideoSource():
                 newBoundingOutline = newRectOutline
             # print("C", newRectOutline, newBoundingOutline)
             boundingOutline = newBoundingOutline
-
         if boundingOutline is None:
             return (self.boundsInvalid_NoBounds, boundingOutline, cnts)
 
@@ -237,16 +227,11 @@ class VideoSource():
         if x1 < maxLeft or x2 > maxRight or y1 < maxTop or y2 > maxBottom:
             return (self.boundsInvalid_TooBig, boundingOutline, cnts)
 
-        # return ((x1, y1, x2, y2), cnts)
-
         # Increase the bounding rect to ensure we cover the whole object
         x1 = x1 - (boxWidth * paddingPercent) // 100
         y1 = y1 - (boxHeight * paddingPercent) // 100
         x2 = x2 + (boxWidth * paddingPercent) // 100
         y2 = y2 + (boxHeight * paddingPercent) // 100
-
-            # boundingRect = (x, y, w, h)
-#        boundsCoords = None if boundingRect is None else (boundingRect[0], boundingRect[1], boundingRect[0]+boundingRect[2], boundingRect[1]+boundingRect[3])
         return (self.boundsValid, (x1,y1,x2,y2), cnts)
 
     def motionDetectFrame(self, videoFrame):
@@ -256,58 +241,24 @@ class VideoSource():
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         blurred = cv2.GaussianBlur(gray, (9, 9), 0)
         # Handle reference
-        if self.motionDetectType == 'one-frame':
-            if self.referenceFrame is None:
-                self.referenceFrame = blurred
-                self.debugTimer.end(1)
-                return (self.boundsInvalid_NoReference, frame, None, None, None)
-            # Calc abs difference between frame and reference
-            frameDelta = cv2.absdiff(self.referenceFrame, blurred)
-            thresh = cv2.threshold(frameDelta, 25, 255, cv2.THRESH_BINARY)[1]
+        if self.referenceFrame is None:
             self.referenceFrame = blurred
-            # get contour of motion
-            (validBounds, boundsCoords, contours) = self.findBoundingRect(thresh, True, 10, (10,10,90,90), (5,10,95,90))
-            if validBounds != self.boundsValid:
-                self.debugTimer.end(1)
-                return (validBounds, frame, boundsCoords, None, contours)
-            (x1,y1,x2,y2) = boundsCoords
-            # Draw onto the frame
-            # cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+            self.debugTimer.end(1)
+            return (self.boundsInvalid_NoReference, frame, None, None, None)
+        # Calc abs difference between frame and reference
+        frameDelta = cv2.absdiff(self.referenceFrame, blurred)
+        thresh = cv2.threshold(frameDelta, 25, 255, cv2.THRESH_BINARY)[1]
+        self.referenceFrame = blurred
+        # get contour of motion
+        (validBounds, boundsCoords, contours) = self.findBoundingRect(thresh, True, 10, (10,10,90,90), (5,10,95,90))
+        if validBounds != self.boundsValid:
             self.debugTimer.end(1)
             return (validBounds, frame, boundsCoords, None, contours)
-        elif self.motionDetectType == 'multi-frame-bb':
-            if self.referenceFrame is None:
-                self.referenceFrame = blurred
-                self.debugTimer.end(1)
-                return (frame, None, None, None)
-            # Calc abs difference between frame and reference
-            frameDelta = cv2.absdiff(self.referenceFrame, blurred)
-            thresh = cv2.threshold(frameDelta, 25, 255, cv2.THRESH_BINARY)[1]
-            cv2.imshow('thresh', thresh)
-            # get contour of motion
-            (boundingRect, boundsCoords, contours) = self.findBoundingRect(thresh)
-            if boundingRect is None:
-                self.debugTimer.end(1)
-                return (frame, None, None, contours)
-            # Add to bounds list
-            if len(self.boundingList) < self.motionDetectNumFrames:
-                self.boundingList.append(boundsCoords)
-            else:
-                self.boundingList[self.boundingListPos] = boundsCoords
-            self.boundingListPos += 1
-            if (self.boundingListPos >= self.motionDetectNumFrames):
-                self.boundingListPos = 0
-            # print(len(self.boundingList), self.boundingListPos)
-            # Calculate the max bounding box from the list
-            bl = np.min(self.boundingList, axis=0)
-            tr = np.max(self.boundingList, axis=0)
-            maxBounds = (bl[0],bl[1],tr[2]-bl[0],tr[3]-bl[1])
-            (x,y,w,h) = maxBounds
-            self.referenceFrame = blurred
-            self.debugTimer.end(1)
-            return (frame, maxBounds, self.boundingList, contours)
+        (x1,y1,x2,y2) = boundsCoords
+        # Draw onto the frame
+        # cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
         self.debugTimer.end(1)
-        return (self.boundsInvalid_NoReference, frame, None, None, None)
+        return (validBounds, frame, boundsCoords, None, contours)
 
     def isFrameColoured(self, frame):
         self.debugTimer.start(0)
@@ -443,10 +394,8 @@ def main(_):
     videoSourceType = config["videoSourceType"]
     videoSourceStr = config["videoSourceStr"]
     destImageFolder = config["destFolder"]
-    frameDetectType = config["frameDetectType"]
-    frameDetectLen = config["frameDetectLen"]
     imageNetFolder = config["imageNetFolder"]
-    showDebugImages = False
+    showDebugImages = (config["showDebugImages"] != 0)
 
     # Create the empty record for the image file dataset
     imageFileData = pandas.DataFrame({"filename":[],"cat":[]})
@@ -459,7 +408,7 @@ def main(_):
     with tf.Session() as sess:
         frameCount = 0
         # Go through each video frame
-        with VideoSource(videoSourceType, videoSourceStr, frameDetectType, frameDetectLen) as videoSource:
+        with VideoSource(videoSourceType, videoSourceStr) as videoSource:
             for (videoFrame, fileName, fileIdx, frameIdx, frameTime) in videoSource.getNextFrame():
                 frameCount += 1
                 # Check if frame has insufficient colour
@@ -482,19 +431,7 @@ def main(_):
                         fName = "bad_" + fileName if (score > 0.2 and "iamese" in human_string) else "good_" + fileName
                         imgFileName = videoSource.saveAsJpeg(destImageFolder, fName, fileIdx, frameIdx, croppedImage)
 
-                # Add to output records
-                # if outDataFile != "":
-                #     cdf = pandas.DataFrame({"filename":[fileName],"cat":[cat]})
-                #     imageFileData = imageFileData.append(cdf, ignore_index=True)
-
-
-
-                # userBreak = procVideoFrame(videoFrame)
-                # print("imageFileData rows", len(imageFileData))
-                # if userBreak:
-                #     break
-            # Display the resulting frame
-                    # Show
+                # Display the resulting frame if required
                 if showDebugImages:
                     # print(videoSource.boundsReason[validBounds])
                     debugFrame = motionDetectFrame.copy()
@@ -518,15 +455,17 @@ def main(_):
                     if cv2.waitKey(50 if validBounds == videoSource.boundsValid else 50) & 0xFF == ord('q'):
                         break
 
+                if frameCount > 3000:
+                    break
+
+    # Debug info
     enddatetime = datetime.datetime.now()
     print("Start", startTime, "End", enddatetime, "Count", frameCount)
     if frameCount > 0:
         print("Elapsed", enddatetime-startTime, "Average", (enddatetime-startTime)/frameCount)
     videoSource.debugTimer.printTimings()
     imageRecogniser.debugTimer.printTimings()
-
-    # imageFileData.to_csv("imageFileData.csv")
-
+    # Clean up
     cv2.destroyAllWindows()
 
 if __name__ == '__main__':

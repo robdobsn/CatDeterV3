@@ -1,8 +1,8 @@
 {
   "videoSourceType": "folder",
   "videoSourceStr": "../testVideo",
-  "destFolder":"../testImages",
-  "frameDetectType": "one-frame",
-  "frameDetectLen": 3,
-  "imageNetFolder": "ImageNet"
+  "destFolder1":"../testImages",
+  "destFolder":"",
+  "imageNetFolder": "ImageNet",
+  "showDebugImages": 0
 }

@@ -1,10 +1,9 @@
 {
   "videoSourceType": "folder",
-  "videoSourceStr2": "E:/FilmAndTV/WebCamRecordings/video/UAFAS",
+  "videoSourceType1": "stream",
   "videoSourceStr": "../testVideo",
-  "destFolder":"E:/Working/catdetectv3/images",
-  "outDataFile":"G:/DB/Dropbox (TheDobsons)/Main/RobDev/Projects/AutomationIoT/DoorCameraAndLocks/Cat Deterrent/CatDeterV3/Tests/ExtractVideoFrames/macallan_dataFile.tsv",
-  "frameDetectType": "multi-frame-bb",
-  "frameDetectLen": 3,
-  "imageNetFolder": "ImageNet"
+  "videoSourceStr1": "rtsp://{0}:{1}@192.168.0.107:554/Streaming/Channels/101/",
+  "destFolder":"",
+  "imageNetFolder": "ImageNet",
+  "showDebugImages": 0
 }
