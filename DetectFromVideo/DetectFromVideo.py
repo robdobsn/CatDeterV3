@@ -254,8 +254,10 @@ def squirtTheBadAnimal(config):
     if config["squirtProtocol"] == "UDP":
         ip = config["squirterIP"]
         port = config["squirterPort"]
-        cmd = config["squirtOnCmd"]
-
+        cmd = bytes(config["squirtOnCmd"], "utf-8")
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        sock.sendto(cmd, (ip, port))
+        print("UDP Sent {}:{} {}".format(ip, port, cmd))
 
 def main(_):
     # Init
@@ -338,8 +340,13 @@ def main(_):
                                 (x1, y1, x2, y2) = b
                                 cv2.rectangle(debugFrame, (x1, y1), (x2, y2), (0, 255, 0), 1)
                     cv2.imshow('frame', debugFrame)
-                    if cv2.waitKey(50 if validBounds == videoSource.boundsValid else 1) & 0xFF == ord('q'):
+                    userKey = cv2.waitKey(50 if validBounds == videoSource.boundsValid else 1) & 0xFF
+                    if userKey == ord('q'):
                         break
+                    elif userKey == ord('t'):
+                        if "squirtProtocol" in config:
+                            squirtTheBadAnimal(config)
+
 
     # Debug info
     enddatetime = datetime.datetime.now()
