@@ -4,6 +4,7 @@
   "videoSourceStr": "../testVideo",
   "videoSourceStr1": "rtsp://{0}:{1}@192.168.0.107:554/Streaming/Channels/101/",
   "destFolder":"",
+  "imageRecogniser": "BadCat",
   "imageNetFolder": "ImageNet",
   "showDebugImages": 0
 }

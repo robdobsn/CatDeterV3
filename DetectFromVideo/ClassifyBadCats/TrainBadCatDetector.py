@@ -9,11 +9,15 @@ from tflearn.layers.conv import conv_2d, max_pool_2d
 from tflearn.layers.core import input_data, dropout, fully_connected
 from tflearn.layers.estimator import regression
 
-TRAIN_DIR = 'C:/Users/rob/Dropbox (TheDobsons)/Main/RobDev/Projects/AutomationIoT/DoorCameraAndLocks/Cat Deterrent/CatDeterV3/trainImages'
+# Change this to True to force recreation of the training data from the input images
+CREATE_TRAIN_DATA = False
+
+TRAIN_DIR = '../../trainImages'
 IMG_SIZE = 50
 LR = 1e-3
+TRAIN_DATA_FILE_NAME = 'train_data.npy'
 
-MODEL_NAME = 'catdetectv3a-{}-{}.model'.format(LR, '2conv-basic') # just so we remember which saved model is which, sizes must match
+MODEL_NAME = 'catdetectv3-{}-{}.model'.format(LR, '5conv-basic') # just so we remember which saved model is which, sizes must match
 
 def label_img(img):
     word_label = img.split('_')[0]
@@ -35,12 +39,14 @@ def create_train_data():
         img = cv2.resize(img, (IMG_SIZE,IMG_SIZE))
         training_data.append([np.array(img),np.array(label)])
     shuffle(training_data)
-    np.save('train_data.npy', training_data)
+    np.save(TRAIN_DATA_FILE_NAME, training_data)
     return training_data
 
-train_data = create_train_data()
-# If you have already created the dataset:
-#train_data = np.load('train_data.npy')
+if CREATE_TRAIN_DATA or not os.path.exists(TRAIN_DATA_FILE_NAME):
+    train_data = create_train_data()
+else:
+    # If you have already created the dataset:
+    train_data = np.load(TRAIN_DATA_FILE_NAME)
 
 tf.reset_default_graph()
 

@@ -3,6 +3,7 @@
   "videoSourceStr": "../testVideo",
   "destFolder1":"../testImages",
   "destFolder":"",
+  "imageRecogniser": "BadCat",
   "imageNetFolder": "ImageNet",
   "showDebugImages": 0
 }

@@ -1,136 +1,32 @@
 import datetime
-import time
+import json
 import os
+import socket
+import time
+
+import cv2
 import imutils
 import numpy as np
-import cv2
-from matplotlib import pyplot as plt
 import pandas
-import json
-import socket
 import tensorflow as tf
-import re
 
-class NodeLookup(object):
-    """Converts integer node ID's to human readable labels."""
+from Utils import DebugTimer
+from ClassifyBadCats import BadCatClassifier
+from InceptionV3ImageNetClassifier import Inception3ImageNetClassifier
 
-    def __init__(self,model_dir,
-                 label_lookup_path=None,
-                 uid_lookup_path=None):
-        if not label_lookup_path:
-            label_lookup_path = os.path.join(
-                model_dir, 'imagenet_2012_challenge_label_map_proto.pbtxt')
-        if not uid_lookup_path:
-            uid_lookup_path = os.path.join(
-                model_dir, 'imagenet_synset_to_human_label_map.txt')
-        self.node_lookup = self.load(label_lookup_path, uid_lookup_path)
-
-    def load(self, label_lookup_path, uid_lookup_path):
-        """Loads a human readable English name for each softmax node.
-
-        Args:
-          label_lookup_path: string UID to integer node ID.
-          uid_lookup_path: string UID to human-readable string.
-
-        Returns:
-          dict from integer node ID to human-readable string.
-        """
-        if not tf.gfile.Exists(uid_lookup_path):
-            tf.logging.fatal('File does not exist %s', uid_lookup_path)
-        if not tf.gfile.Exists(label_lookup_path):
-            tf.logging.fatal('File does not exist %s', label_lookup_path)
-
-        # Loads mapping from string UID to human-readable string
-        proto_as_ascii_lines = tf.gfile.GFile(uid_lookup_path).readlines()
-        uid_to_human = {}
-        p = re.compile(r'[n\d]*[ \S,]*')
-        for line in proto_as_ascii_lines:
-            parsed_items = p.findall(line)
-            uid = parsed_items[0]
-            human_string = parsed_items[2]
-            uid_to_human[uid] = human_string
-
-        # Loads mapping from string UID to integer node ID.
-        node_id_to_uid = {}
-        proto_as_ascii = tf.gfile.GFile(label_lookup_path).readlines()
-        for line in proto_as_ascii:
-            if line.startswith('  target_class:'):
-                target_class = int(line.split(': ')[1])
-            if line.startswith('  target_class_string:'):
-                target_class_string = line.split(': ')[1]
-                node_id_to_uid[target_class] = target_class_string[1:-2]
-
-        # Loads the final mapping of integer node ID to human-readable string
-        node_id_to_name = {}
-        for key, val in node_id_to_uid.items():
-            if val not in uid_to_human:
-                tf.logging.fatal('Failed to locate: %s', val)
-            name = uid_to_human[val]
-            node_id_to_name[key] = name
-
-        return node_id_to_name
-
-    def id_to_string(self, node_id):
-        if node_id not in self.node_lookup:
-            return ''
-        return self.node_lookup[node_id]
-
-class ImageRecogniser():
-    def __init__(self, model_dir):
-        # Creates graph from saved GraphDef.
-        self.model_dir = model_dir
-        self.create_graph()
-        self.debugTimer = DebugTimer(["ConvertImage", "RecogniseImage","Lookup"])
-
-    def create_graph(self):
-        # Creates graph from saved graph_def.pb.
-        with tf.gfile.FastGFile(os.path.join(
-                self.model_dir, 'classify_image_graph_def.pb'), 'rb') as f:
-            graph_def = tf.GraphDef()
-            graph_def.ParseFromString(f.read())
-            _ = tf.import_graph_def(graph_def, name='')
-
-    def recogniseImage(self, sess, image, num_top_predictions):
-
-        self.debugTimer.start(0)
-        # Convert image
-        img2 = cv2.resize(image, dsize=(299, 299), interpolation=cv2.INTER_CUBIC)
-        # Numpy array
-        np_image_data = np.asarray(img2)
-        np_image_data = cv2.normalize(np_image_data.astype('float'), None, -0.5, .5, cv2.NORM_MINMAX)
-        # maybe insert float convertion here - see edit remark!
-        np_final = np.expand_dims(np_image_data, axis=0)
-        self.debugTimer.end(0)
-
-        self.debugTimer.start(1)
-        softmax_tensor = sess.graph.get_tensor_by_name('softmax:0')
-        predictions = sess.run(softmax_tensor,{'Mul:0': np_final})
-        predictions = np.squeeze(predictions)
-        self.debugTimer.end(1)
-
-        self.debugTimer.start(2)
-        # Creates node ID --> English string lookup.
-        node_lookup = NodeLookup(self.model_dir)
-
-        top_k = predictions.argsort()[-num_top_predictions:][::-1]
-        node_id = top_k[0]
-        human_string = node_lookup.id_to_string(node_id)
-        score = predictions[node_id]
-        self.debugTimer.end(2)
-        return (human_string, score)
 
 class VideoSource():
     def __init__(self, videoSourceType, videoSourceStr):
         self.videoSourceType = videoSourceType
         self.videoSourceStr = videoSourceStr
-        self.debugTimer = DebugTimer(["IsColoured", "MotionDetect","GetFrame"])
+        self.debugTimer = DebugTimer.DebugTimer(["IsColoured", "MotionDetect", "GetFrame"])
         self.boundsValid = 0
         self.boundsInvalid_NoBounds = 1
         self.boundsInvalid_TooSmall = 2
         self.boundsInvalid_NotLandscape = 3
         self.boundsInvalid_TooBig = 4
         self.boundsInvalid_NoReference = 5
-        self.boundsReason = ["Ok", "NoBounds", "TooSmall", "NotLandscape", "TooBig","NoReference"]
+        self.boundsReason = ["Ok", "None", "Small", "Shape", "Big", "NoRef"]
 
     def __enter__(self):
         # Reference for detecting motion
@@ -325,37 +221,6 @@ class VideoSource():
         outFileName = os.path.join(destFolder,imgFileNameOnly)
         cv2.imwrite(outFileName, image)
 
-class DebugTimer():
-    def __init__(self, countLabels):
-        self.counts = [0] * len(countLabels)
-        self.starts = [0] * len(countLabels)
-        self.times = [0] * len(countLabels)
-        self.countLabels = countLabels
-
-    def start(self, i):
-        self.starts[i] = time.time()
-
-    def end(self, i):
-        self.times[i] += time.time() - self.starts[i]
-        self.counts[i] += 1
-
-    def mean(self, i):
-        if self.counts[i] > 0:
-            return self.times[i] / self.counts[i]
-        return 0
-
-    def getTimings(self):
-        timeVals = []
-        for i in range(len(self.countLabels)):
-            timeVal = { "n": self.countLabels[i], "t": self.times[i], "i": self.counts[i], "m": self.mean(i)}
-            timeVals.append(timeVal)
-        return timeVals
-
-    def printTimings(self):
-        timings = self.getTimings()
-        for tim in timings:
-            print("{:20}\t{:.3f}\t{:.3f}\t{}".format(tim['n'],tim['m'],tim['t'],tim['i']))
-
 def getConfig():
     # Config
     config = {}
@@ -385,6 +250,13 @@ def getConfig():
         config[k] = v
     return config
 
+def squirtTheBadAnimal(config):
+    if config["squirtProtocol"] == "UDP":
+        ip = config["squirterIP"]
+        port = config["squirterPort"]
+        cmd = config["squirtOnCmd"]
+
+
 def main(_):
     # Init
     print("Extract Video Frames")
@@ -396,12 +268,23 @@ def main(_):
     destImageFolder = config["destFolder"]
     imageNetFolder = config["imageNetFolder"]
     showDebugImages = (config["showDebugImages"] != 0)
+    imageRecogniser = config["imageRecogniser"]
+    badCatClassifierFolder = config["badCatClassifierFolder"]
 
     # Create the empty record for the image file dataset
     imageFileData = pandas.DataFrame({"filename":[],"cat":[]})
 
     # Create the image recogniser
-    imageRecogniser = ImageRecogniser(imageNetFolder)
+    if imageRecogniser == "BadCat":
+        imageRecogniser = BadCatClassifier.ImageRecogniser(badCatClassifierFolder, 50)
+    else:
+        imageRecogniser = Inception3ImageNetClassifier.ImageRecogniser(imageNetFolder)
+
+    print("Starting image recogniser ... ", end="")
+    modelLoadOk = imageRecogniser.start()
+    if not modelLoadOk:
+        print("Model not loaded correctly")
+        exit(0)
 
     # Start tensorflow session
     startTime = datetime.datetime.now()
@@ -418,25 +301,28 @@ def main(_):
                 (validBounds, motionDetectFrame, maxBoundsCoords, boundsList, contours) = videoSource.motionDetectFrame(videoFrame)
 
                 # Detect cat
+                good_bad_string = ""
                 if validBounds == videoSource.boundsValid:
                     croppedImage = videoSource.getCroppedImage(videoFrame, motionDetectFrame, maxBoundsCoords, (299,299))
                     if croppedImage is None:
                         continue
-                    (human_string, score) = imageRecogniser.recogniseImage(sess, croppedImage, 1)
-                    # if score > 0.2 and "iamese" in human_string:
-                    #     print('%s (score = %.5f)' % (human_string, score))
+                    (good_bad_string, score) = imageRecogniser.recogniseImage(sess, croppedImage, 1)
 
                     # Save out as an image if required
                     if destImageFolder != "":
-                        fName = "bad_" + fileName if (score > 0.2 and "iamese" in human_string) else "good_" + fileName
+                        fName = good_bad_string + "_" + fileName
                         imgFileName = videoSource.saveAsJpeg(destImageFolder, fName, fileIdx, frameIdx, croppedImage)
+
+                    if "squirtProtocol" in config:
+                        squirtTheBadAnimal(config)
 
                 # Display the resulting frame if required
                 if showDebugImages:
                     # print(videoSource.boundsReason[validBounds])
                     debugFrame = motionDetectFrame.copy()
                     font = cv2.FONT_HERSHEY_SIMPLEX
-                    cv2.putText(debugFrame, videoSource.boundsReason[validBounds], (120, 40), font, 1, (0, 255, 0), 2)
+                    cv2.putText(debugFrame, videoSource.boundsReason[validBounds], (220, 40), font, 1, (0, 255, 0), 2)
+                    cv2.putText(debugFrame, good_bad_string, (350, 40), font, 1, (0, 255, 0) if "good" in good_bad_string else (0,0,255) , 2)
                     showBoundsList = False
                     showContours = True
                     if showContours and contours is not None:
@@ -452,11 +338,8 @@ def main(_):
                                 (x1, y1, x2, y2) = b
                                 cv2.rectangle(debugFrame, (x1, y1), (x2, y2), (0, 255, 0), 1)
                     cv2.imshow('frame', debugFrame)
-                    if cv2.waitKey(50 if validBounds == videoSource.boundsValid else 50) & 0xFF == ord('q'):
+                    if cv2.waitKey(50 if validBounds == videoSource.boundsValid else 1) & 0xFF == ord('q'):
                         break
-
-                if frameCount > 3000:
-                    break
 
     # Debug info
     enddatetime = datetime.datetime.now()

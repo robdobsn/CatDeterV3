@@ -10,11 +10,11 @@ from tflearn.layers.core import input_data, dropout, fully_connected
 from tflearn.layers.estimator import regression
 import time
 
-TEST_DIR = 'C:/Users/rob/Dropbox (TheDobsons)/Main/RobDev/Projects/AutomationIoT/DoorCameraAndLocks/Cat Deterrent/CatDeterV3/nnTestImages'
+TEST_DIR = '../../nnTestImages'
 IMG_SIZE = 50
 LR = 1e-3
 
-MODEL_NAME = 'catdetectv3-{}-{}.model'.format(LR, '2conv-basic') # just so we remember which saved model is which, sizes must match
+MODEL_NAME = 'catdetectv3-{}-{}.model'.format(LR, '5conv-basic') # just so we remember which saved model is which, sizes must match
 
 def process_test_data():
     testing_data = []
@@ -70,8 +70,8 @@ convnet = regression(convnet, optimizer='adam', learning_rate=LR, loss='categori
 
 model = tflearn.DNN(convnet, tensorboard_dir='log')
 
-if os.path.exists('C:/Users/rob/Dropbox (TheDobsons)/Main/RobDev/Projects/AutomationIoT/DoorCameraAndLocks/Cat Deterrent/CatDeterV3/DetectFromVideo/ClassifyBadCats/{}.meta'.format(MODEL_NAME)):
-    print("Loading model")
+if os.path.exists('../ClassifyBadCats/{}.meta'.format(MODEL_NAME)):
+    print("Loading model ... ", end="")
     model.load(MODEL_NAME)
     print('model loaded!')
 
