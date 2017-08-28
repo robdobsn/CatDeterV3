@@ -11,5 +11,6 @@
   "squirterIP": "192.168.0.120",
   "squirterPort": 7191,
   "squirtProtocol": "UDP",
-  "squirtOnCmd": "1-On"
+  "squirtOnCmd": "1-On",
+  "consecutiveBadDetections": 2
 }

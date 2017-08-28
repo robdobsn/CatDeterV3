@@ -288,6 +288,9 @@ def main(_):
         print("Model not loaded correctly")
         exit(0)
 
+    # Count consecutive bad cat detection events
+    numConsecutiveBadCats = 0
+
     # Start tensorflow session
     startTime = datetime.datetime.now()
     with tf.Session() as sess:
@@ -315,8 +318,18 @@ def main(_):
                         fName = good_bad_string + "_" + fileName
                         imgFileName = videoSource.saveAsJpeg(destImageFolder, fName, fileIdx, frameIdx, croppedImage)
 
-                    if "squirtProtocol" in config:
-                        squirtTheBadAnimal(config)
+                    # Count consecutive "bad" cats
+                    if "bad" in good_bad_string:
+                        numConsecutiveBadCats += 1
+                        # Squirt if enough consecutive images seen
+                        if "consecutiveBadDetections" in config:
+                            consecutiveBadDetections = config["consecutiveBadDetections"]
+                            if numConsecutiveBadCats > consecutiveBadDetections and "squirtProtocol" in config:
+                                squirtTheBadAnimal(config)
+                    else:
+                        numConsecutiveBadCats = 0
+
+
 
                 # Display the resulting frame if required
                 if showDebugImages:
