@@ -1,6 +1,9 @@
 config.json
 config.h
-testImages\*
+testImages/
+trainImages/
+nnTestImages/
+testVideo/
 
 # Compiled source #
 ###################

@@ -12,5 +12,5 @@
   "squirterPort": 7191,
   "squirtProtocol": "UDP",
   "squirtOnCmd": "1-On",
-  "consecutiveBadDetections": 2
+  "consecutiveBadDetections": 3
 }

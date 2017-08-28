@@ -324,7 +324,7 @@ def main(_):
                         # Squirt if enough consecutive images seen
                         if "consecutiveBadDetections" in config:
                             consecutiveBadDetections = config["consecutiveBadDetections"]
-                            if numConsecutiveBadCats > consecutiveBadDetections and "squirtProtocol" in config:
+                            if numConsecutiveBadCats >= consecutiveBadDetections and "squirtProtocol" in config:
                                 squirtTheBadAnimal(config)
                     else:
                         numConsecutiveBadCats = 0
