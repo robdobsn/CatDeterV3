@@ -1,16 +1,16 @@
 {
-  "videoSourceType": "folder",
-  "videoSourceType1": "stream",
-  "videoSourceStr": "../testVideo",
-  "videoSourceStr1": "rtsp://{0}:{1}@192.168.0.215:554/Streaming/Channels/101",
+  "videoSourceType1": "folder",
+  "videoSourceType": "stream",
+  "videoSourceStr1": "../testVideo",
+  "videoSourceStr": "rtsp://{0}:{1}@192.168.0.215:554/Streaming/Channels/101",
   "destFolder":"../testImages",
   "imageRecogniser": "BadCat",
   "imageNetFolder": "ImageNet",
   "badCatClassifierFolder": "ClassifyBadCats",
-  "showDebugImages": 0,
+  "showDebugImages": 1,
   "squirterIP": "192.168.0.120",
   "squirterPort": 7191,
-  "squirtProtocol": "",
+  "squirtProtocol": "UDP",
   "squirtOnCmd": "1-On",
   "consecutiveBadDetections": 3
 }
