@@ -7,7 +7,7 @@
   "imageRecogniser": "BadCat",
   "imageNetFolder": "ImageNet",
   "badCatClassifierFolder": "ClassifyBadCats",
-  "showDebugImages": 0,
+  "showDebugImages": 1,
   "squirterIP": "192.168.0.120",
   "squirterPort": 7191,
   "squirtProtocol": "",

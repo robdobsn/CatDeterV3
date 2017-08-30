@@ -7,7 +7,6 @@ import time
 import cv2
 import imutils
 import numpy as np
-import pandas
 import tensorflow as tf
 
 from Utils import DebugTimer
@@ -272,9 +271,6 @@ def main(_):
     showDebugImages = (config["showDebugImages"] != 0)
     imageRecogniser = config["imageRecogniser"]
     badCatClassifierFolder = config["badCatClassifierFolder"]
-
-    # Create the empty record for the image file dataset
-    imageFileData = pandas.DataFrame({"filename":[],"cat":[]})
 
     # Create the image recogniser
     if imageRecogniser == "BadCat":

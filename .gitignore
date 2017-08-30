@@ -4,6 +4,7 @@ testImages/
 trainImages/
 nnTestImages/
 testVideo/
+__pycache__/
 
 # Compiled source #
 ###################
@@ -46,7 +47,3 @@ tmtagsHistory
 *.sublime-project
 *.sublime-workspace
 .bundle
-
-
-
-
